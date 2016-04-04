@@ -33,3 +33,4 @@ If you select the wrong storage location (or SD Maid is just not happy with the 
 [[ https://cloud.githubusercontent.com/assets/1439229/14230455/7b4b0fe6-f958-11e5-9b1a-2bbb5a7d972e.png | height = 300px]]
 [[ https://cloud.githubusercontent.com/assets/1439229/14230457/7f1a8e62-f958-11e5-8713-951b4500f49e.png | height = 300px]]
 [[ https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png | height = 300px]]
+[[ https://cloud.githubusercontent.com/assets/1439229/14256420/51aa30f8-fa99-11e5-9853-5d6b41e4cbbc.png | height = 300px]]
