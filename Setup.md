@@ -21,12 +21,19 @@ Anyways, if you reach this step, SD Maid will display a list of storage location
 * At the top right or bottom right corner, press the select button.
 You should now have returned to SD Maid and the previously orange entry is green. Rinse and repeat for every entry.
 
-### Activity not found
+### Error: Activity not found
 The activity through which you grant SD Maid access is part of the "Documents" app, specifically the app with the packagename `com.android.documentsui`. This should be available on any 5.0+ ROM as it is part of the Android Open Source Project (AOSP). If you are getting this error you or someone else modified the ROM such that this app is either not installed or disabled. To check for it's existance you can enable "Show system apps" and then search for the packagename using SD Maids AppControl tool.
 
-### Invalid storage / Invalid input
-If you select the wrong storage location (or SD Maid is just not happy with the selection for any reason) you will see and error message and the entry will stay orange. In some cases it is possible that you selected the correct storage and it still said "Invalid" and didn't accept it. Reason for that are usually related to your devices ROM.
-(e.g. [#312](../issues/312) or [#231](../issues/231)). As a temporary solution you can permantly skip this step by choosing "Don't show again" from the overflow menu in the top right corner of the setup page and then skipping the step. Although the step is optional not completing it can reduce SD Maids effectiveness. On rooted devices skipping this has less of an impact as SD Maid will fallback to using root for access. Generally SD Maid tries use root only when absolutely necessary because it is usually faster and consumes less resources.
+#### Solutions
+* Checking on rooted devices if the app `Documents` has been accidentally disabled.
+* Writing the manufactor an angry mail why his 5.0+ ROM is not Android CTS compliant.
+
+### Error: Invalid storage / Invalid input
+If you select the wrong storage location (or SD Maid is just not happy with the selection for any reason) you will see and error message and the entry will stay orange. In some cases it is possible that you selected the correct storage and it still said "Invalid" and didn't accept it. Reasons for that are usually related to your devices ROM (e.g. [#312](../issues/312) or [#231](../issues/231)).
+
+#### Solutions
+* In some cases removing, formatting and reinserting the sdcard helps.
+* As a temporary solution you can permantly skip this step by choosing "Don't show again" from the overflow menu in the top right corner. On rooted devices skipping this has no adverse effect.
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/14230453/787daed6-f958-11e5-9718-be013e87e86e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230453/787daed6-f958-11e5-9718-be013e87e86e.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14230454/7a0150d2-f958-11e5-9c1d-08de69ffad7b.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230454/7a0150d2-f958-11e5-9c1d-08de69ffad7b.png)
