@@ -34,7 +34,7 @@ On some devices the `Documents` app that opens after pressing the orange entry i
 
 #### Known solutions
 * Formatting the sdcard. Possibly removing and reinserting the sdcard.
-* Note: Currently due to a bug in SD Maid this skip can not be stepped. Update 4.1.4 will fix this soon.
+* Note: Currently due to a bug in SD Maid this skip can not be stepped. Update 4.1.4 will fix this soon ([#352](https://github.com/d4rken/sdmaid-public/issues/352)).
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/14278110/4e3c0e36-fb26-11e5-9c91-65d23eb48676.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14278110/4e3c0e36-fb26-11e5-9c91-65d23eb48676.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14278050/0fa0defe-fb26-11e5-9062-0508bd60400b.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14278050/0fa0defe-fb26-11e5-9062-0508bd60400b.png)
@@ -49,7 +49,7 @@ The activity through which you grant SD Maid access is part of the "Documents" a
 * Writing the manufactor an angry mail why his 5.0+ ROM is not Android CTS compliant.
 
 ### Error: Invalid storage / Invalid input
-If you select the wrong storage location (or SD Maid is just not happy with the selection for any reason) you will see and error message and the entry will stay orange. In some cases it is possible that you selected the correct storage and it still said "Invalid" and didn't accept it. Reasons for that are usually related to your devices ROM (e.g. [#312](../issues/312) or [#231](../issues/231)).
+If you select the wrong storage location (or SD Maid is just not happy with the selection for any reason) you will see and error message and the entry will stay orange. In some cases it is possible that you selected the correct storage and it still said "Invalid" and didn't accept it. Reasons for that are usually related to your devices ROM (e.g. [#312](https://github.com/d4rken/sdmaid-public/issues/312) or [#231](https://github.com/d4rken/sdmaid-public/issues/231)).
 
 #### Known solutions
 * In some cases removing, formatting and reinserting the sdcard helps (Known cases: Galaxy S7 edge).
