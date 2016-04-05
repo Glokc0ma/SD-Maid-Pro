@@ -23,23 +23,35 @@ Anyways, if you reach this step, SD Maid will display a list of storage location
 * At the top right or bottom right corner, press the select button.
 You should now have returned to SD Maid and the previously orange entry is green. Rinse and repeat for every entry.
 
+[[[ https://cloud.githubusercontent.com/assets/1439229/14230453/787daed6-f958-11e5-9718-be013e87e86e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230453/787daed6-f958-11e5-9718-be013e87e86e.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/14230454/7a0150d2-f958-11e5-9c1d-08de69ffad7b.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230454/7a0150d2-f958-11e5-9c1d-08de69ffad7b.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/14230455/7b4b0fe6-f958-11e5-9b1a-2bbb5a7d972e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230455/7b4b0fe6-f958-11e5-9b1a-2bbb5a7d972e.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/14230457/7f1a8e62-f958-11e5-8713-951b4500f49e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230457/7f1a8e62-f958-11e5-8713-951b4500f49e.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png)
+
+### Error: Documents window is empty (shows no sdcards)
+On some devices the `Documents` app that opens after pressing the orange entry is empty. No storage can be chosen despite having clicked `Show sdcards`. This means that your ROM (not SD Maid) does not correctly recognize your extra storage. Known devices with this issue: Galaxy S7 edge.
+
+#### Known solutions
+* Formatting the sdcard. Possibly removing and reinserting the sdcard.
+
+[[[ https://cloud.githubusercontent.com/assets/1439229/14278110/4e3c0e36-fb26-11e5-9c91-65d23eb48676.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14278110/4e3c0e36-fb26-11e5-9c91-65d23eb48676.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/14278050/0fa0defe-fb26-11e5-9062-0508bd60400b.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14278050/0fa0defe-fb26-11e5-9062-0508bd60400b.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/14278051/10a37028-fb26-11e5-9332-1be70f417221.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14278051/10a37028-fb26-11e5-9332-1be70f417221.png)
+[[[https://cloud.githubusercontent.com/assets/1439229/14278054/11e17aa2-fb26-11e5-8023-bbc16fd4cac2.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14278054/11e17aa2-fb26-11e5-8023-bbc16fd4cac2.png)
+
 ### Error: Activity not found
 The activity through which you grant SD Maid access is part of the "Documents" app, specifically the app with the packagename `com.android.documentsui`. This should be available on any 5.0+ ROM as it is part of the Android Open Source Project (AOSP). If you are getting this error you or someone else modified the ROM such that this app is either not installed or disabled. To check for it's existance you can enable "Show system apps" and then search for the packagename using SD Maids AppControl tool.
 
-#### Solutions
+#### Known solutions
 * Checking on rooted devices if the app `Documents` has been accidentally disabled.
 * Writing the manufactor an angry mail why his 5.0+ ROM is not Android CTS compliant.
 
 ### Error: Invalid storage / Invalid input
 If you select the wrong storage location (or SD Maid is just not happy with the selection for any reason) you will see and error message and the entry will stay orange. In some cases it is possible that you selected the correct storage and it still said "Invalid" and didn't accept it. Reasons for that are usually related to your devices ROM (e.g. [#312](../issues/312) or [#231](../issues/231)).
 
-#### Solutions
+#### Known solutions
 * In some cases removing, formatting and reinserting the sdcard helps (Known cases: Galaxy S7 edge).
 * As a temporary solution you can permantly skip this step by choosing "Don't show again" from the overflow menu in the top right corner. On rooted devices skipping this has no adverse effect.
 
-[[[ https://cloud.githubusercontent.com/assets/1439229/14230453/787daed6-f958-11e5-9718-be013e87e86e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230453/787daed6-f958-11e5-9718-be013e87e86e.png)
-[[[ https://cloud.githubusercontent.com/assets/1439229/14230454/7a0150d2-f958-11e5-9c1d-08de69ffad7b.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230454/7a0150d2-f958-11e5-9c1d-08de69ffad7b.png)
-[[[ https://cloud.githubusercontent.com/assets/1439229/14230455/7b4b0fe6-f958-11e5-9b1a-2bbb5a7d972e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230455/7b4b0fe6-f958-11e5-9b1a-2bbb5a7d972e.png)
-[[[ https://cloud.githubusercontent.com/assets/1439229/14230457/7f1a8e62-f958-11e5-8713-951b4500f49e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230457/7f1a8e62-f958-11e5-8713-951b4500f49e.png)
-[[[ https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png)
 [[[https://cloud.githubusercontent.com/assets/1439229/14256420/51aa30f8-fa99-11e5-9853-5d6b41e4cbbc.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14256420/51aa30f8-fa99-11e5-9853-5d6b41e4cbbc.png)
