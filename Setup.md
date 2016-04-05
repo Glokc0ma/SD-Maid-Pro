@@ -30,7 +30,7 @@ You should now have returned to SD Maid and the previously orange entry is green
 [[[ https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png)
 
 ### Error: Documents window is empty (shows no sdcards)
-On some devices the `Documents` app that opens after pressing the orange entry is empty. No storage can be chosen despite having clicked `Show sdcards`. This means that your ROM (not SD Maid) does not correctly recognize your extra storage. Known devices with this issue: Galaxy S7 edge.
+On some devices the `Documents` app that opens after pressing the orange entry is empty. No storage can be chosen despite having clicked `Show sdcards`. This means that your ROM (not SD Maid) does not correctly recognize your extra storage. A few Galaxy (S7/Note4) have this issue, seems to depend on how/when the sdcard was setup.
 
 #### Known solutions
 * Formatting the sdcard. Possibly removing and reinserting the sdcard.
