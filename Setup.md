@@ -34,7 +34,7 @@ The activity through which you grant SD Maid access is part of the "Documents" a
 If you select the wrong storage location (or SD Maid is just not happy with the selection for any reason) you will see and error message and the entry will stay orange. In some cases it is possible that you selected the correct storage and it still said "Invalid" and didn't accept it. Reasons for that are usually related to your devices ROM (e.g. [#312](../issues/312) or [#231](../issues/231)).
 
 #### Solutions
-* In some cases removing, formatting and reinserting the sdcard helps.
+* In some cases removing, formatting and reinserting the sdcard helps (Known cases: Galaxy S7 edge).
 * As a temporary solution you can permantly skip this step by choosing "Don't show again" from the overflow menu in the top right corner. On rooted devices skipping this has no adverse effect.
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/14230453/787daed6-f958-11e5-9718-be013e87e86e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230453/787daed6-f958-11e5-9718-be013e87e86e.png)
