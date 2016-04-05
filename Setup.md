@@ -33,6 +33,7 @@ You should now have returned to SD Maid and the previously orange entry is green
 On some devices the `Documents` app that opens after pressing the orange entry is empty. No storage can be chosen despite having clicked `Show sdcards`. This means that your ROM (not SD Maid) does not correctly recognize your extra storage. A few Galaxy (S7/Note4) have this issue, seems to depend on how/when the sdcard was setup.
 
 #### Known solutions
+* Make sure that the app `com.android.externalstorage` has not been disabled.
 * Formatting the sdcard. Possibly removing and reinserting the sdcard.
 * Note: Currently due to a bug in SD Maid this skip can not be stepped. Update 4.1.4 will fix this soon ([#352](https://github.com/d4rken/sdmaid-public/issues/352)).
 
@@ -42,7 +43,7 @@ On some devices the `Documents` app that opens after pressing the orange entry i
 [[[https://cloud.githubusercontent.com/assets/1439229/14278054/11e17aa2-fb26-11e5-8023-bbc16fd4cac2.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14278054/11e17aa2-fb26-11e5-8023-bbc16fd4cac2.png)
 
 ### Error: Activity not found
-The activity through which you grant SD Maid access is part of the "Documents" app, specifically the app with the packagename `com.android.documentsui`. This should be available on any 5.0+ ROM as it is part of the Android Open Source Project (AOSP). If you are getting this error you or someone else modified the ROM such that this app is either not installed or disabled. To check for it's existance you can enable "Show system apps" and then search for the packagename using SD Maids AppControl tool.
+The activity through which you grant SD Maid access is part of the "Documents" app, specifically the app with the packagename `com.android.documentsui` and `com.android.externalstorage`. This should be available on any 5.0+ ROM as it is part of the Android Open Source Project (AOSP). If you are getting this error you or someone else modified the ROM such that this app is either not installed or disabled. To check for it's existance you can enable "Show system apps" and then search for the packagename using SD Maids AppControl tool.
 
 #### Known solutions
 * Checking on rooted devices (or some Samsung devices with 'Package Disabler') if the app `Documents` has been disabled.
