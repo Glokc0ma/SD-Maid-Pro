@@ -34,6 +34,7 @@ On some devices the `Documents` app that opens after pressing the orange entry i
 
 #### Known solutions
 * Formatting the sdcard. Possibly removing and reinserting the sdcard.
+* Note: Currently due to a bug in SD Maid this skip can not be stepped. Update 4.1.4 will fix this soon.
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/14278110/4e3c0e36-fb26-11e5-9c91-65d23eb48676.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14278110/4e3c0e36-fb26-11e5-9c91-65d23eb48676.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14278050/0fa0defe-fb26-11e5-9062-0508bd60400b.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14278050/0fa0defe-fb26-11e5-9062-0508bd60400b.png)
