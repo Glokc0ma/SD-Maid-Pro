@@ -45,7 +45,7 @@ On some devices the `Documents` app that opens after pressing the orange entry i
 The activity through which you grant SD Maid access is part of the "Documents" app, specifically the app with the packagename `com.android.documentsui`. This should be available on any 5.0+ ROM as it is part of the Android Open Source Project (AOSP). If you are getting this error you or someone else modified the ROM such that this app is either not installed or disabled. To check for it's existance you can enable "Show system apps" and then search for the packagename using SD Maids AppControl tool.
 
 #### Known solutions
-* Checking on rooted devices if the app `Documents` has been accidentally disabled.
+* Checking on rooted devices (or some Samsung devices with 'Package Disabler') if the app `Documents` has been disabled.
 * Ask the manufactor why his 5.0+ ROM is not Android CTS compliant (known case for some MIUI devices).
 
 ### Error: Invalid storage / Invalid input
