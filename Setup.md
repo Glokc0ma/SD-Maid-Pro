@@ -46,7 +46,7 @@ The activity through which you grant SD Maid access is part of the "Documents" a
 
 #### Known solutions
 * Checking on rooted devices if the app `Documents` has been accidentally disabled.
-* Writing the manufactor an angry mail why his 5.0+ ROM is not Android CTS compliant.
+* Ask the manufactor why his 5.0+ ROM is not Android CTS compliant (known case for some MIUI devices).
 
 ### Error: Invalid storage / Invalid input
 If you select the wrong storage location (or SD Maid is just not happy with the selection for any reason) you will see and error message and the entry will stay orange. In some cases it is possible that you selected the correct storage and it still said "Invalid" and didn't accept it. Reasons for that are usually related to your devices ROM (e.g. [#312](https://github.com/d4rken/sdmaid-public/issues/312) or [#231](https://github.com/d4rken/sdmaid-public/issues/231)).
