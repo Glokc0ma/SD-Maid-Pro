@@ -55,6 +55,7 @@ If you select the wrong storage location (or SD Maid is just not happy with the 
 
 #### Known solutions
 * In some cases removing, formatting and reinserting the sdcard helps (Known cases: Galaxy S7 edge).
-* As a temporary solution you can permantly skip this step by choosing "Don't show again" from the overflow menu in the top right corner. On rooted devices skipping this has no adverse effect.
+* As a temporary solution you can permantly skip this step by choosing "Don't show again" from the overflow menu in the top right corner. If SD Maid v3 could acccess the storage previously, it should still be able to access it if you skip this step (e.g. on rooted devices). 
 
+[[[https://cloud.githubusercontent.com/assets/1439229/14360338/3230618e-fcf6-11e5-9369-37a53ac5ae95.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14360338/3230618e-fcf6-11e5-9369-37a53ac5ae95.png)
 [[[https://cloud.githubusercontent.com/assets/1439229/14256420/51aa30f8-fa99-11e5-9853-5d6b41e4cbbc.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14256420/51aa30f8-fa99-11e5-9853-5d6b41e4cbbc.png)
