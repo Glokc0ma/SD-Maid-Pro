@@ -18,11 +18,11 @@ Good, now we have a baseline for what kind of device setup you have. Now add a l
 * What actions did you take?
 * Can you reproduce it, i.e. does this happen everytime?
 
-### Step 2 - Advanced report
-#### Crash report
+## Step 3 - Advanced report
+### Crash report
 If SD Maid crashed I should have gotten an automatic crash report (unless you turned that off, but why would you...). To find this crash report on my server I need to identify your SD Maid installation. This happen through a UUID which is a unique and anonymous identifier SD Maid generates on it's first start. You can find it by going into the Overview section and expanding the box containing SD Maids version information. Tap it to copy it to your clipboard and add it to your issue ticket.
 
-#### **Debugrun log**
+### **Debugrun log**
 The best thing you can provide is a debug log.
 If you can still enter SD Maid and reach the advanced settings, do it and press "Debug run" which will cause SD Maid to restart in debug mode.
 Now everything SD Maid does will be written into a log file, attach this log file to your issue ticket. Note that the file may private information inform of file names and pathes on your device.
