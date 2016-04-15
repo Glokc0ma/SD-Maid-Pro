@@ -1,6 +1,9 @@
 # Overview page
 The overview page acts as a small dashboard for your device and SD Maids current status.
 
+[[[ https://cloud.githubusercontent.com/assets/1439229/14575239/d20d1704-0360-11e6-87a7-3886dbe26e60.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575239/d20d1704-0360-11e6-87a7-3886dbe26e60.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/14575238/d1ea8720-0360-11e6-840d-4f2f0761b49f.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575238/d1ea8720-0360-11e6-840d-4f2f0761b49f.png)
+
 ## Storage
 Storage refers to permanent device storage that holds files, this should not be confused with memory (aka RAM). Your device has multiple storage areas. SD Maid will list a selection of the most interesting storages. Usually this is public and private storages where apps and user data resides. Other distinct storage areas such as the storage location of your systems firmware is ommitted (for now) because it's not generally something the user has to be concerned with.
 
