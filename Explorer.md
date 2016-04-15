@@ -12,6 +12,7 @@ You navigate down the directory tree by tapping folders to enter. Going backward
 [[[ https://cloud.githubusercontent.com/assets/1439229/14575338/6e409a60-0361-11e6-808b-b0d62bb101a4.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575338/6e409a60-0361-11e6-808b-b0d62bb101a4.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14575339/6f53af50-0361-11e6-921f-e81a232d2eb4.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575339/6f53af50-0361-11e6-921f-e81a232d2eb4.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14575342/7087c92e-0361-11e6-88b6-b4fc384c0575.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575342/7087c92e-0361-11e6-88b6-b4fc384c0575.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/14576144/10608e7c-0367-11e6-8f62-689ce0f3392a.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14576144/10608e7c-0367-11e6-8f62-689ce0f3392a.png)
 
 ## Bookmarks
 On the right screen side sliding out side drawer. It contains a bookmarks manager that provides a set of shortcuts to interesting default locations. You can add new entries by entering a folder, then opening the bookmarks drawer and pressing the plus button to the right of the path in the browser bar. Bookmarks can be removed by long pressing them.
