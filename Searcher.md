@@ -6,7 +6,7 @@ The searcher allows you to search your device. You can just search for files or 
 * Create an [Exclusion](https://github.com/d4rken/sdmaid-public/wiki/Exclusion) for this entry.
 * Delete the item.
 
-Note that wildcards such as * are currently automatically appended, so if you enter "\*file\*" SD Maid will execute a search for "\*\*file**" which will likely return no results.
+Note that wildcards such as `*` are currently automatically appended, so if you enter `*file*` SD Maid will execute a search for `**file**` which will likely return no results.
 
 A few extra settings such as
 * Root search
