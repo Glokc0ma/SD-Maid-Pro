@@ -59,3 +59,10 @@ If you select the wrong storage location (or SD Maid is just not happy with the 
 
 [[[https://cloud.githubusercontent.com/assets/1439229/14360338/3230618e-fcf6-11e5-9369-37a53ac5ae95.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14360338/3230618e-fcf6-11e5-9369-37a53ac5ae95.png)
 [[[https://cloud.githubusercontent.com/assets/1439229/14256420/51aa30f8-fa99-11e5-9853-5d6b41e4cbbc.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14256420/51aa30f8-fa99-11e5-9853-5d6b41e4cbbc.png)
+
+### Error: "Documents has stopped"
+Certain LG and Samsung ROMs (Android 5.0-5.1 afaik) had a bug where the documents app crashed if one or more storage entries had an empty name. The specific exception is something a long a nullpointer exception.
+
+#### Known solutions
+* Updating the ROM, in most cases Samsung and LG fixed this bug with an update.
+* Inserting the SD Card into another device and giving it a name (e.g. computer/notebook).
