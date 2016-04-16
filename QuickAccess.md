@@ -1,4 +1,3 @@
-# QuickAccess
 ## QuickAccess Page
 The "QuickAccess" page is the first page you see when opening SD Maid for the first time. It's intended to allow fast and easy access. It groups the most commonly used tools (that can be run without further user intervention) under a single button.
 
