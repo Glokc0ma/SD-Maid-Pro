@@ -13,16 +13,16 @@ Choose a different app if you don't feel comfortable using SD Maid, if it is too
 
 Functions that don't work at all without root are usually those that modify other apps, such as freezing or disabling components or uninstalling system apps.
 
-## Does SD Maid only work on sdcards?
+# Does SD Maid only work on sdcards?
 **No.** SD Maid will consider any accessible storage in your device. Depending on what can be accessed, this includes internal storage, external storage and usb storage.
 
-## Why should I use SD Maid?
+# Why should I use SD Maid?
 
 **Because it's thorough and honest.**
 If you want a broom, you look for the one that cleans best, any other purchase argument is secondary. SD Maid v0.1 was released on [29.03.2011](http://forum.xda-developers.com/showpost.php?p=12482608&postcount=1). Years of learning and more experience, constant improvements and adaption to every new Android kink, make SD Maid what is is today.
 SD Maid is brutally honest, there will be no euphemisms to make your feel better after "cleaning" your device. No hidden agenda to pressure you into using the app itself. A tool to use when needed.
 
-## SD Maid v2/v3/v4
+# SD Maid v2/v3/v4
 There are different versions available of SD Maid. Every few years SD Maid was completely overhauled to improve it through gained experience and to adopt to new Android environments. During these overhauls the minimum required Android version is usually raised due reduce workload, maintaining compatibility "hacks" for very old Android versions is usually not feasible when supporting the newest Android versions.
 
 It's possibly that newer versions seem slower but downgrading because of that is bad trade, you would gain speed but pay with thoroughness and safety. Searching through more and doing additional checks just costs time. Never versions may show less items to delete, not because they are worse, but because for specific reasons it is no longer considered good to remove these files. The goal is not to delete the most files, but the right files. Every change has a good reason.
