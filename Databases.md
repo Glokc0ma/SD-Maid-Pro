@@ -1,0 +1,3 @@
+# Databases
+Databases scans your device for databases who would have thought :)?
+When databases grow in size, additional "pages" are added to it. When the data is deleted, the database does not necessarily shrink in size and the additional (now empty) pages still exist. This features looks for such empty pages and removes them. No data is lost. It will free a small amount of space and slightly speed up database access. 
