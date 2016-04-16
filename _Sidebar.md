@@ -1,3 +1,5 @@
+## SD Maid - Wiki
+
 ### Basics
 * [Home](https://github.com/d4rken/sdmaid-public/wiki)
 * [Setup](https://github.com/d4rken/sdmaid-public/wiki/Setup)
