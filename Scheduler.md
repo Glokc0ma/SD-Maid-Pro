@@ -1,0 +1,2 @@
+# Scheduler
+The scheduler allows you to automate running the different cleaning tools. The execution time may differ by +/- 10 minutes on some devices to save battery. As the system will bundle several alarms and wakeup calls and not trigger each one immediatly. 
