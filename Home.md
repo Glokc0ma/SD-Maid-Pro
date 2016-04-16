@@ -1,4 +1,4 @@
-Welcome to the SD Maid's wiki!
+Welcome to SD Maid's wiki!
 
 SD Maid is an advanced file management tool for Android devices.
 
