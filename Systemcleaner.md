@@ -1,0 +1,5 @@
+# SystemCleaner
+The SystemCleaner is a big filtering engine. It scans as much and as fast as possible and then tries to sort the results into one of the filters. Each filter specifies criteria that the file has to meet before being placed into that category. Every item can only be in one category at once.
+After the SystemCleaner finished scanning it will display all non empty categories. You can select different filters through the filter manager (button in the actionbar). SD Maid ships with a default set of filters which I deem to be safe for your data and device. Each filter is also tagged with a color that indicates how important those files are (similar to the CorpseFinder's colors). A green item such as crash reports are files you will not miss, an orange item such as process statistics might be something you would like to keep.
+If you have the pro version you can also create your own filters, but make sure that your filter only matches the files you desire to find and delete.
+To view the files that have been sorted into a specific filter, long press the filter and view its details. 
