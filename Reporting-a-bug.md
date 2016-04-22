@@ -32,4 +32,4 @@ The logfile can be found on your internal sdcard under:
 <sdcard>/Android/data/eu.thedarken.sdm/files/logfiles/
 ```
 
-In some cases you may not be able to reach the advanced settings because SD Maid crashes or missbehaves before that. In that case it is possible to force a debug run by creating a file or directory named ```sdm_force_debug_run``` on your internal sdcard. Make sure SD Maid is not running, then on launch the file will be consumed and for that session SD Maid will do a debug run.
+In some cases you may not be able to reach the advanced settings because SD Maid crashes or missbehaves before that. In that case it is possible to force a debug run by creating a file or directory named ```sdm_force_debug_run``` in the root directory your internal sdcard (e.g. `/storage/emulated/0`). Make sure SD Maid is not running, then on launch the file will be consumed and for that session SD Maid will do a debug run.
