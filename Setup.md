@@ -66,3 +66,34 @@ Certain LG and Samsung ROMs (Android 5.0-5.1 afaik) had a bug where the document
 #### Known solutions
 * Updating the ROM, in most cases Samsung and LG fixed this bug with an update.
 * Inserting the SD Card into another device and giving it a name (e.g. computer/notebook).
+
+## Binary setup
+Binaries are extra files that SD Maid sets up on first run. These binaries are required for SD Maid to run. SD Maid itself has compatible binaries for the architectures X86, MIPS and ARM. Normally this all happens automatically and you don't have to do anything.
+
+If internal binaries don't work, SD Maid will also try built-in (into the ROM) binaries.
+
+### Busybox error
+The busybox binary is a mandatory file that needs to be setup, if this is not possible SD Maid can not continue. It is usually located in `/data/data/eu.thedarken.sdm/files/busybox`, but may also be placed in other location to circumvent root restrictions on specific ROMs (also see: [binary status](https://github.com/d4rken/sdmaid-public/wiki/Overview#binary-status)).
+
+#### Faulty root setup
+The most common reason for this error is a faulty root setup.
+
+Possible solutions:
+* Reroot the device.
+* Switch the SuperUser application.
+
+#### Security restrictions
+Some ROMs, most commonly Samsung ROMs, employ stronger security measures such as KNOX. SD Maids own toolkit may not be sufficient to work around all restrictions. Due to the restrictions SD Maid might have root, and might have been able to setup the binary, but can not use all commands with root.
+
+Possible solutions:
+* Disable KNOX.
+* Change SELinux to `permissive`.
+
+#### Permission issues
+On both unrooted and rooted devices it is possible that directory permissions are so screwed up that it can not change or execute it's own files. This can happen during an update, reinstall, downgrade or any other case that interacts with a preexisting install.
+
+Possible solutions:
+* Clear data for SD Maid
+* Reinstall SD Maid
+
+[[[https://cloud.githubusercontent.com/assets/1439229/14926312/e2b5c8da-0e4b-11e6-802f-b7436bed07b3.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14926312/e2b5c8da-0e4b-11e6-802f-b7436bed07b3.png)
