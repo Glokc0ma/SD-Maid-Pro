@@ -78,28 +78,28 @@ The busybox binary is a mandatory file that needs to be setup, if this is not po
 #### Faulty root setup
 The most common reason for this error is a faulty root setup.
 
-Possible solutions:
+##### Known solutions:
 * Reroot the device.
 * Switch the SuperUser application.
 
 #### Security restrictions
 Some ROMs, most commonly Samsung ROMs, employ stronger security measures such as KNOX. SD Maids own toolkit may not be sufficient to work around all restrictions. Due to the restrictions SD Maid might have root, and might have been able to setup the binary, but can not use all commands with root.
 
-Possible solutions:
+##### Known solutions:
 * Disable KNOX.
 * Change SELinux to `permissive`.* Try a different SuperUser application (e.g. SuperSU), which might offer better workarounds for specific security measures.
 
 #### Permission issues
 On both unrooted and rooted devices it is possible that directory permissions are so screwed up that it can not change or execute it's own files. This can happen during an update, reinstall, downgrade or any other case that interacts with a preexisting install.
 
-Possible solutions:
+##### Known solutions:
 * Clear data for SD Maid.
 * Reinstall SD Maid.
 
 #### Incompatible architecture
 It's unlikely, but possible that your device has a cpu architecture for which SD Maid does not have a binary file (outside of ARM/MIPS/X86).
 
-Possible solutions:
+##### Known solutions:
 * Install a compatible binary into your system which SD Maid can access.
 * Email SD Maids developer and ask if it possible to create a compatible binary.
 
