@@ -70,8 +70,6 @@ Certain LG and Samsung ROMs (Android 5.0-5.1 afaik) had a bug where the document
 ## Binary setup
 Binaries are extra files that SD Maid sets up on first run. These binaries are required for SD Maid to run. SD Maid itself has compatible binaries for the architectures X86, MIPS and ARM. Normally this all happens automatically and you don't have to do anything.
 
-If internal binaries don't work, SD Maid will also try built-in (into the ROM) binaries.
-
 ### Busybox error
 The busybox binary is a mandatory file that needs to be setup, if this is not possible SD Maid can not continue. It is usually located in `/data/data/eu.thedarken.sdm/files/busybox`, but may also be placed in other location to circumvent root restrictions on specific ROMs (also see: [binary status](https://github.com/d4rken/sdmaid-public/wiki/Overview#binary-status)).
 
@@ -89,12 +87,19 @@ Some ROMs, most commonly Samsung ROMs, employ stronger security measures such as
 
 Possible solutions:
 * Disable KNOX.
-* Change SELinux to `permissive`.
+* Change SELinux to `permissive`.* Try a different SuperUser application (e.g. SuperSU), which might offer better workarounds for specific security measures.
 
 #### Permission issues
 On both unrooted and rooted devices it is possible that directory permissions are so screwed up that it can not change or execute it's own files. This can happen during an update, reinstall, downgrade or any other case that interacts with a preexisting install.
 
 Possible solutions:
-* Clear data for SD Maid
-* Reinstall SD Maid
+* Clear data for SD Maid.
+* Reinstall SD Maid.
+
+#### Incompatible architecture
+It's unlikely, but possible that your device has a cpu architecture for which SD Maid does not have a binary file (outside of ARM/MIPS/X86).
+
+Possible solutions:
+* Install a compatible binary into your system which SD Maid can access.
+* Email SD Maids developer and ask if it possible to create a compatible binary.
 
