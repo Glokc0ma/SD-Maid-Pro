@@ -70,36 +70,35 @@ Certain LG and Samsung ROMs (Android 5.0-5.1 afaik) had a bug where the document
 ## Binary setup
 Binaries are extra files that SD Maid sets up on first run. These binaries are required for SD Maid to run. SD Maid itself has compatible binaries for the architectures X86, MIPS and ARM. Normally this all happens automatically and you don't have to do anything.
 
-### Busybox error
+### Error: Busybox error
 The busybox binary is a mandatory file that needs to be setup, if this is not possible SD Maid can not continue. It is usually located in `/data/data/eu.thedarken.sdm/files/busybox`, but may also be placed in other location to circumvent root restrictions on specific ROMs (also see: [binary status](https://github.com/d4rken/sdmaid-public/wiki/Overview#binary-status)).
 
 [[[https://cloud.githubusercontent.com/assets/1439229/14926312/e2b5c8da-0e4b-11e6-802f-b7436bed07b3.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14926312/e2b5c8da-0e4b-11e6-802f-b7436bed07b3.png)
 
-#### Faulty root setup
-The most common reason for this error is a faulty root setup.
+#### Cause: Faulty root setup
+The most common reason for this error is a faulty root setup. SD Maid thinks it has root, but using it fails unexpectedly.
 
-##### Known solutions:
+Known solutions:
 * Reroot the device.
+* Clear the data of the SuperUser application.
+* Deny SD Maid root access, then restart the device, grant SD Maid root access.
 * Switch the SuperUser application.
 
-#### Security restrictions
+#### Cause: Security restrictions
 Some ROMs, most commonly Samsung ROMs, employ stronger security measures such as KNOX. SD Maids own toolkit may not be sufficient to work around all restrictions. Due to the restrictions SD Maid might have root, and might have been able to setup the binary, but can not use all commands with root.
 
-##### Known solutions:
+Known solutions:
 * Disable KNOX.
 * Change SELinux to `permissive`.* Try a different SuperUser application (e.g. SuperSU), which might offer better workarounds for specific security measures.
 
-#### Permission issues
+#### Cause: Permission issues
 On both unrooted and rooted devices it is possible that directory permissions are so screwed up that it can not change or execute it's own files. This can happen during an update, reinstall, downgrade or any other case that interacts with a preexisting install.
 
-##### Known solutions:
 * Clear data for SD Maid.
 * Reinstall SD Maid.
 
-#### Incompatible architecture
+#### Cause: Incompatible architecture
 It's unlikely, but possible that your device has a cpu architecture for which SD Maid does not have a binary file (outside of ARM/MIPS/X86).
 
-##### Known solutions:
 * Install a compatible binary into your system which SD Maid can access.
 * Email SD Maids developer and ask if it possible to create a compatible binary.
-
