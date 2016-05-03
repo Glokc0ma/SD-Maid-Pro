@@ -6,6 +6,8 @@ The AppCleaner scans for **expendable** files. Files that expedendable should fu
 
 This generally includes all official cache locations (`<pkg>/cache/`) as well as uncommon cache locations (due to non-standard directory naming or location) and specific directories that have been manually added to SD Maids databases.
 
+The AppCleaner works on a per App basis, meaning that any file it checks is related to a known installed app. This is in contrast to the SystemCleaner which is generally unaware of any app<->file relation.
+
 ## When to use it?
 ### Low space
 Unless you are really low on free space it's generally not beneficial empty all your app caches every day. It's not harmful to your device or apps though. Low free space can negatively impact device performance, but this only happens below 10% or less (varies with storage) free space. Above it you would gain better performance by keeping a moderate file cache.
