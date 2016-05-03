@@ -1,5 +1,5 @@
 # AppCleaner
-The AppCleaner scans for "caches-like" files, e.g. files that are expendable. Files that expedendable should fullfil the following criteria:
+The AppCleaner scans for **expendable** files. Files that expedendable should fullfil the following criteria:
 * App automatically recreates them if necessary
 * Deleting them does not cause errors within an app
 * No user created information must be lost (e.g. a picture taken with the camera is "user created").
