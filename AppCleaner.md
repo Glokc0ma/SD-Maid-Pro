@@ -1,16 +1,10 @@
 # AppCleaner
-## What does it do?
-The AppCleaner scans for "caches-like" files, these are files that fullfil the following criteria:
+The AppCleaner scans for "caches-like" files, e.g. files that are expendable. Files that expedendable should fullfil the following criteria:
 * App automatically recreates them if necessary
 * Deleting them does not cause errors within an app
 * No user created information must be lost (e.g. a picture taken with the camera is "user created").
 
 This generally includes all official cache locations (`<pkg>/cache/`) as well as uncommon cache locations (due to non-standard directory naming or location) and specific directories that have been manually added to SD Maids databases.
-
-## Why delete cache?
-First lets get something straight: **Caches are not a bad thing.** Loading files from cache instead of downloading or recalculating them again can make loading faster and save device resources (battery/cpu/bandwidth). 
-
-In a perfect app world, all apps manage their cache perfectly and a tool such as this would be unnecessary. But the world isn't perfect and apps missmanage their cache by e.g. not limiting it's size. Often the user is given no control over it except for wiping the whole cache. The AppCleaner aims to provide the user with detailed information and more fine grained control over each apps cache.
 
 ## When to use it?
 ### Low space
@@ -31,6 +25,11 @@ It's also possible that apps screwed app their own cache management and start to
 * Show inaccessible items: Some items, especially on 6.0+ without root may be known to SD Maid, but can't be accessed (i.e. deleted).
 
 ## FAQ
+### Why delete cache?
+First lets get something straight: **Caches are not a bad thing.** Loading files from cache instead of downloading or recalculating them again can make loading faster and save device resources (battery/cpu/bandwidth). 
+
+In a perfect app world, all apps manage their cache perfectly and a tool such as this would be unnecessary. But the world isn't perfect and apps missmanage their cache by e.g. not limiting it's size. Often the user is given no control over it except for wiping the whole cache. The AppCleaner aims to provide the user with detailed information and more fine grained control over each apps cache.
+
 ### Why not just use the systems built-in functions?
 The systems cache clearing routines only cover the default caches. This means files that within the official `cache` folder in the official app data locations (e.g. `/data/data/<pkg>/cache` and `<sdcard>/Android/data/<pkg>/cache`).
 But apps may also create directories and files on the root of the sdcard and save their cache in those directories or use weird constelations such `.cache` or `/files/cache`.
