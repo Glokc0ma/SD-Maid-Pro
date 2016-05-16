@@ -40,6 +40,12 @@ Choose a different app if you don't feel comfortable using SD Maid, if it is too
 
 Functions that don't work at all without root are usually those that modify other apps, such as freezing or disabling components or uninstalling system apps.
 
+```
+Imagine you buy an offroad vehicle, like a Jeep or a LandRover Defender.
+Do you have to drive offroad? No, but if you want to, then you can.
+It still works perfectly well being driven on a normal road. 
+```
+
 ## Does SD Maid only work on sdcards?
 **No.** SD Maid will consider any accessible storage in your device. Depending on what can be accessed, this includes internal storage, external storage and usb storage.
 
