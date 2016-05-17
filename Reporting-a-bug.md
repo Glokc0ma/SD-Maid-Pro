@@ -1,7 +1,7 @@
 # How to report a bug?
 
 While it would be the perfect bug report if you follow all of the following steps you can start with basic information and still add more at a later point or on request.
-**A bug report missing of a few details or better than no bug report at all.**
+**A bug report missing a few details is better than no bug report at all.**
 
 ## Step 1 - Known issues
 Some bugs or issues might already be known, to check that visit the [issue tracker](https://github.com/d4rken/sdmaid-public/issues). Check [current and recently closed issues](https://github.com/d4rken/sdmaid-public/issues?utf8=%E2%9C%93&q=is%3Aissue). If you find a similar issue post a comment under it, otherwise make a new issue. 
