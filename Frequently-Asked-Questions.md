@@ -7,7 +7,7 @@ SD Maid consists of two apps, the free app and a paid app. The paid app is a plu
 This is not an SD Maid issue, but still a popular question. Apps purchased through Google Play are tied to your Google account, not your device. If you use the same Google account on a new or factory reset device, you will have access to all previous purchases.
 
 ### Google Play is not showing the purchase
-If Google Play is not showing your purchase, you are either not logged in with the account your purchased the application with or the Google Play app has not yet syncronized with your list of purchases. This is a Google Play issue and has no relation to SD Maid itself.
+Apps are purchased per Google account, not per device. Switching devices doesn't mean you have to buy an app again. If Google Play is not showing your purchase, you are either not logged in with the account your purchased the application with or the Google Play app has not yet syncronized with your list of purchases. You can see your purchases [here](https://wallet.google.com/manage/#transactions:filter=ALL) or [here](https://play.google.com/apps). This is a Google Play issue and has no relation to SD Maid itself.
 
 The following action are known to fix this in some instances:
 * Force closing and reopening Google Play.
