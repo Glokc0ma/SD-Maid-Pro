@@ -79,6 +79,7 @@ The busybox binary is a mandatory file that needs to be setup, if this is not po
 The most common reason for this error is a faulty root setup. SD Maid thinks it has root, but using it fails unexpectedly.
 
 Known solutions:
+* Remove SD Maid (the unlocker can stay installed), check that the folder `/data/data/eu.thedarken.sdm` is gone. Check that SD Maid is no longer visible in the SuperUser app. Reboot your device. Reinstall SD Maid. 
 * Reroot the device.
 * Clear the data of the SuperUser application.
 * Deny SD Maid root access, then restart the device, grant SD Maid root access.
