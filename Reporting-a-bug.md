@@ -25,12 +25,13 @@ If SD Maid crashed I should have gotten an automatic crash report (unless you tu
 
 ### **Debugrun log**
 The best thing you can provide is a debug log.
-If you can still enter SD Maid and reach the advanced settings, do it and press "Debug run" which will cause SD Maid to restart in debug mode.
-Now everything SD Maid does will be written into a log file, attach this log file to your issue ticket. Note that the file may private information inform of file names and pathes on your device.
+You can trigger this in 2 ways:
+* If you can still enter SD Maid: In SD Maid v4.2.6+ long press the settings entry in the menu to view debug options, in SD Maid v4.2.5 or older you can find the debug options in the advanced settings. After a full restart SD Maid will be in debug mode and log all actions.
 
-The logfile can be found on your internal sdcard under:
+* If you can't enter SD Maid anymore because some goes wrong early on: In some cases you may not be able to reach the advanced settings because SD Maid crashes or missbehaves before that. In that case it is possible to force a debug run by creating a file or directory named ```sdm_force_debug_run``` in the root directory your internal sdcard (e.g. `/storage/emulated/0`). Make sure SD Maid is not running, then on launch the file will be consumed and for that session SD Maid will do a debug run.
+
+Everything SD Maid does will be written into a log file, attach this log file to your issue ticket. Note that the file may private information in form of file names and pathes on your device.
 ```
 <sdcard>/Android/data/eu.thedarken.sdm/files/logfiles/
 ```
 
-In some cases you may not be able to reach the advanced settings because SD Maid crashes or missbehaves before that. In that case it is possible to force a debug run by creating a file or directory named ```sdm_force_debug_run``` in the root directory your internal sdcard (e.g. `/storage/emulated/0`). Make sure SD Maid is not running, then on launch the file will be consumed and for that session SD Maid will do a debug run.
