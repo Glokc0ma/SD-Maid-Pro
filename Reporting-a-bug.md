@@ -21,7 +21,7 @@ Good, now we have a baseline for what kind of device setup you have. Now add a l
 
 ## Step 3 - Advanced report
 ### Crash report
-If SD Maid crashed I should have gotten an automatic crash report (unless you turned that off, but why would you...). To find this crash report on my server I need to identify your SD Maid installation. This happen through a UUID which is a unique and anonymous identifier SD Maid generates on it's first start. You can find it by going into the Overview section and expanding the box containing SD Maids version information. Tap it to copy it to your clipboard and add it to your issue ticket.
+If SD Maid crashed I should have gotten an automatic crash report (unless you turned that off, but why would you...). To find this crash report on my server I need to identify your SD Maid installation. This happen through a UUID which is a unique and anonymous identifier SD Maid generates on it's first start. You can find it by going into the Overview section and expanding the box containing SD Maids version information (or by long pressing the settings menu entry on v4.2.6+). Tap it to copy it to your clipboard and add it to your issue ticket.
 
 ### **Debugrun log**
 The best thing you can provide is a debug log.
