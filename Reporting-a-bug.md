@@ -20,18 +20,34 @@ Good, now we have a baseline for what kind of device setup you have. Now add a l
 * Can you reproduce it, i.e. does this happen everytime?
 
 ## Step 3 - Advanced report
+The following instructions are valid for SD Maid v4.2.6+.
 ### Crash report
-If SD Maid crashed I should have gotten an automatic crash report (unless you turned that off, but why would you...). To find this crash report on my server I need to identify your SD Maid installation. This happen through a UUID which is a unique and anonymous identifier SD Maid generates on it's first start. You can find it by going into the Overview section and expanding the box containing SD Maids version information (or by long pressing the settings menu entry on v4.2.6+). Tap it to copy it to your clipboard and add it to your issue ticket.
+If SD Maid crashed I should have gotten an automatic crash report (unless you turned that off, but why would you...). To find this crash report on my server I need to identify your SD Maid installation. This happen through a UUID which is a unique and anonymous identifier SD Maid generates on it's first start. You can find it by going into the Overview section and expanding the box containing SD Maids version information or by long pressing the settings menu entry. Tap it to copy it to your clipboard and add it to your issue ticket.
 
 ### **Debugrun log**
-The best thing you can provide is a debug log.
-You can trigger this in 2 ways:
-* If you can still enter SD Maid: In SD Maid v4.2.6+ long press the settings entry in the menu to view debug options, in SD Maid v4.2.5 or older you can find the debug options in the advanced settings. After a full restart SD Maid will be in debug mode and log all actions.
+The best thing you can provide to help fix an issue is a debug log of the problem manifesting. A debug log is a very detailed description of everything SD Maid did. Note that the file may private information in form of file names and pathes on your device.
 
-* If you can't enter SD Maid anymore because some goes wrong early on: In some cases you may not be able to reach the advanced settings because SD Maid crashes or missbehaves before that. In that case it is possible to force a debug run by creating a file or directory named ```sdm_force_debug_run``` in the root directory your internal sdcard (e.g. `/storage/emulated/0`). Make sure SD Maid is not running, then on launch the file will be consumed and for that session SD Maid will do a debug run.
+A debug run is initiated if SD Maids detects the file ```sdm-force-debug-run``` in its public files folder.
+Example:
+```
+/storage/emulated/0/Android/data/eu.thedarken.sdm/files/sdm-force-debug-run
+```
 
-Everything SD Maid does will be written into a log file, attach this log file to your issue ticket. Note that the file may private information in form of file names and pathes on your device.
+If the file exists and you restart SD Maid, the file will be consumed and the current session will be a debug run. If you are unsure if SD Maid is completely shutdown, just force close it.
+
+The trigger file can be created manually (through any file tool) or you can have SD Maid create the file for you.
+
+The most comfortable option is having SD Maid create the file for you. This obviously only works if you can still enter SD Maid: 
+* Open SD Maid
+* Open the navigation menu
+* Long press the settings entry at the bottom
+* Press the button "Create debug trigger".
+* Done. SD Maids next session will be a debug run :+1:.
+
+
+The created logfiles will be on your primary public storage in the same location where the trigger file was created.
+Example:
 ```
 <sdcard>/Android/data/eu.thedarken.sdm/files/logfiles/
 ```
-
+This folder is used SD Maid can write to it without any extra permissions or requirement, thus we can even use the debug run to troubleshoot permission issues :wink:.
