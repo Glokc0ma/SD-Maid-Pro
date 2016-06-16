@@ -45,6 +45,11 @@ The most comfortable option is having SD Maid create the file for you. This obvi
 * Done. SD Maids next session will be a debug run :+1:.
 
 
+[[[ https://cloud.githubusercontent.com/assets/1439229/16135841/8977d1e0-3426-11e6-8d1c-e9daac0cc980.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/16135841/8977d1e0-3426-11e6-8d1c-e9daac0cc980.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/16135843/8aa8d852-3426-11e6-821a-948771b82ec6.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/16135843/8aa8d852-3426-11e6-821a-948771b82ec6.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/16135846/8cd0f42a-3426-11e6-8411-fb55720bdea7.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/16135846/8cd0f42a-3426-11e6-8411-fb55720bdea7.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/16135847/8e33e2a0-3426-11e6-9f93-ddcc9d4c9b34.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/16135847/8e33e2a0-3426-11e6-9f93-ddcc9d4c9b34.png)
+
 The created logfiles will be on your primary public storage in the same location where the trigger file was created.
 Example:
 ```
