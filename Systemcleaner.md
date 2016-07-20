@@ -113,6 +113,13 @@ The minimum size the target has to be in bytes.
 A regular expression that will be applied to the whole path and has to match.
 * JSON array `regexes`
 
+[[[ https://cloud.githubusercontent.com/assets/1439229/17000496/2223cce4-4ec3-11e6-857b-837f99452205.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000496/2223cce4-4ec3-11e6-857b-837f99452205.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/17000497/2249845c-4ec3-11e6-8000-8e7c0b59b0e1.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000497/2249845c-4ec3-11e6-8000-8e7c0b59b0e1.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/17000498/224f3ce4-4ec3-11e6-8070-9e476acaa019.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000498/224f3ce4-4ec3-11e6-8070-9e476acaa019.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/17000499/22520a0a-4ec3-11e6-854a-73d58a9ee92e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000499/22520a0a-4ec3-11e6-854a-73d58a9ee92e.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/17000500/225af430-4ec3-11e6-819e-5c855f6340ad.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000500/225af430-4ec3-11e6-819e-5c855f6340ad.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/17000501/225b6ff0-4ec3-11e6-88fe-e9a4381aa3da.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000501/225b6ff0-4ec3-11e6-88fe-e9a4381aa3da.png)
+
 ## Export
 A user filter can be be exported as well as imported. The export format for such filter is a `.json` which can also be edited manually with a text editor. This is a sample file showing most attributes:
 
@@ -150,10 +157,3 @@ A user filter can be be exported as well as imported. The export format for such
     ]
 }
 ```
-
-[[[ https://cloud.githubusercontent.com/assets/1439229/17000496/2223cce4-4ec3-11e6-857b-837f99452205.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000496/2223cce4-4ec3-11e6-857b-837f99452205.png)
-[[[ https://cloud.githubusercontent.com/assets/1439229/17000497/2249845c-4ec3-11e6-8000-8e7c0b59b0e1.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000497/2249845c-4ec3-11e6-8000-8e7c0b59b0e1.png)
-[[[ https://cloud.githubusercontent.com/assets/1439229/17000498/224f3ce4-4ec3-11e6-8070-9e476acaa019.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000498/224f3ce4-4ec3-11e6-8070-9e476acaa019.png)
-[[[ https://cloud.githubusercontent.com/assets/1439229/17000499/22520a0a-4ec3-11e6-854a-73d58a9ee92e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000499/22520a0a-4ec3-11e6-854a-73d58a9ee92e.png)
-[[[ https://cloud.githubusercontent.com/assets/1439229/17000500/225af430-4ec3-11e6-819e-5c855f6340ad.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000500/225af430-4ec3-11e6-819e-5c855f6340ad.png)
-[[[ https://cloud.githubusercontent.com/assets/1439229/17000501/225b6ff0-4ec3-11e6-88fe-e9a4381aa3da.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000501/225b6ff0-4ec3-11e6-88fe-e9a4381aa3da.png)
