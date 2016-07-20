@@ -1,5 +1,5 @@
 # SystemCleaner
-The SystemCleaner is purely file/directory based filtering engine in contrast to tools like [AppCleaner](https://github.com/d4rken/sdmaid-public/wiki/Appcleaner) it has no notion of "apps". It scans the whole device and tries to sort found items into different filter based on each items metadata. Each filter specifies criteria that a file has to meet before being placed into that filter. Every item can only be sorted into one filter.
+The SystemCleaner is a file/directory based filtering engine. It full fills a task similar to the [AppCleaner](https://github.com/d4rken/sdmaid-public/wiki/Appcleaner) tool, but it has no notion of "apps". It searches the whole device and tries to sort found items into different filter based on each items metadata. The default SystemCleaner filter target expendable files that can't be attributed to a specific app. It is also possible to create your own filter or import/export filter.
 
 ## Filter
 A filter specifies a set of rules that a file has to meet before it is sorted into it. SD Maid provides a set of default filters that you can choose from, but you can also import userfilters or create your own filter.
