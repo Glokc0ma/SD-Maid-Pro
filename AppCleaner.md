@@ -1,8 +1,8 @@
 # AppCleaner
-The AppCleaner scans for **expendable** files. Files that are expedendable should fullfil the following criteria:
+The AppCleaner is responsible for **expendable** files that can be attribuetd to a specific installed application. Files that are expedendable should fullfil the following criteria:
 * App automatically recreates them if necessary
 * Deleting them does not cause errors within an app
-* No user created information must be lost (e.g. a picture taken with the camera is "user created").
+* No user created information is lost (e.g. a picture taken with the camera is "user created").
 
 This generally includes all official cache locations (i.e. `/data/data/<pkg>/cache/` and `/<sdcard>/Android/data/<pkg>/cache/`) as well as uncommon cache locations (due to non-standard directory naming or location) and specific directories that have been manually added to SD Maids databases.
 
