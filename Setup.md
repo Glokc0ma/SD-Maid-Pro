@@ -67,6 +67,12 @@ Certain LG and Samsung ROMs (Android 5.0-5.1 afaik) had a bug where the document
 * Updating the ROM, in most cases Samsung and LG fixed this bug with an update.
 * Inserting the SD Card into another device and giving it a name (e.g. computer/notebook).
 
+### Error: Permissions don't survive reboots
+Despite successfully granting storage access, after rebooting the procedure has to be repeated. This is an Android bug and known to happen on 6.0 device where SD Maid has been installed to secondary storage (e.g. sdcard). Also see [#437](https://github.com/d4rken/sdmaid-public/issues/437).
+
+#### Known solutions
+* Move SD Maid back to internal storage
+
 ## Binary setup
 Binaries are extra files that SD Maid sets up on first run. These binaries are required for SD Maid to run. SD Maid itself has compatible binaries for the architectures X86, MIPS and ARM. Normally this all happens automatically and you don't have to do anything.
 
