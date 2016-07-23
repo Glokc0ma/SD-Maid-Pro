@@ -6,6 +6,11 @@ The easiest way to create an exclusion is to long press the item you want to exc
 Alternatively you can manually create an exclusion by venturing the ExclusionManager, which you can find at the bottom of the navigation drawer.
 Note: For a new exclusion to take effect, the tool it should be applied to has to be refreshed.
 
+[[[ https://cloud.githubusercontent.com/assets/1439229/17080573/57bf10b0-5135-11e6-8ed5-9aeb519aafec.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17080573/57bf10b0-5135-11e6-8ed5-9aeb519aafec.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/17080574/63a98a9a-5135-11e6-8682-cc2f9462698c.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17080574/63a98a9a-5135-11e6-8682-cc2f9462698c.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/17080579/8078c528-5135-11e6-878c-0180743520f8.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17080579/8078c528-5135-11e6-878c-0180743520f8.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/17080592/b3d69fda-5135-11e6-933d-bb7177812068.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17080592/b3d69fda-5135-11e6-933d-bb7177812068.png)
+
 ### Exclusion types
 #### Simple
 The simple exclusions is the type you get when you create a new exclusion. It matches if the input text contains the exclusion text.
@@ -16,6 +21,9 @@ Matching is case-sensitive.
 A regex exclusion allows you to exclude items based on a [regular expression](https://en.wikipedia.org/wiki/Regular_expression). It matches if the regular expression matches the input text.
 To switch from simple to regex exclusion, choose the respective option in the toolbar during exclusion creation. 
 Note: As exclusions are checked for thousands of files. Many exclusions of this type or inefficient regular expressions can significantly slow down operations. A handy site to play with regular expressions is [regex101](http://regex101.com/).
+
+[[[ https://cloud.githubusercontent.com/assets/1439229/17080594/c4afa0c2-5135-11e6-920d-e12da9ac0270.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17080594/c4afa0c2-5135-11e6-920d-e12da9ac0270.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/17080596/cae45ce4-5135-11e6-95a2-197c76e9cfbd.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17080596/cae45ce4-5135-11e6-95a2-197c76e9cfbd.png)
 
 ## Modifying exclusions
 Exclusions can be deleted or modified by tapping an entry in the ExclusionManager or by trying to create an exclusion that matches an already existing exclusion.
@@ -61,7 +69,12 @@ Format example:
 }
 ```
 
+[[[ https://cloud.githubusercontent.com/assets/1439229/17080606/fd4e199a-5135-11e6-8271-bacacc8698d0.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17080606/fd4e199a-5135-11e6-8271-bacacc8698d0.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/17080609/0949717c-5136-11e6-8f0a-7415e2823df5.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17080609/0949717c-5136-11e6-8f0a-7415e2823df5.png)
+
 ## Default exclusions
 SD Maid already comes with a set of default exclusions for items. Some of these are locked, meaning that you can remove them (e.g. SD Maid excluding itself), other can be removed. Only remove default exclusions if you know what you are doing.
 Example:
 * `com.android.systemui` is a non-locked default exclusion. If the app is running (which the system UI always is) SD Maid has to kill it before working on it. While not critical, killing the system UI can lead to soft-reboot which can lead other apps to malfunction. As the system UI doesn't offer much to do for SD Maid anyways, a default exclusion was added for it.
+
+[[[ https://cloud.githubusercontent.com/assets/1439229/17080612/14331caa-5136-11e6-884b-daada890c539.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17080612/14331caa-5136-11e6-884b-daada890c539.png)
