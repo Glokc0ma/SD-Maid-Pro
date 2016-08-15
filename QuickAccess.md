@@ -21,3 +21,6 @@ The QuickAccess widget is only available in SD Maid Pro. It allows you to place 
 
 Analog to the QuickAccess page, tools started by the widget will use the same settings as when you used them from inside the app.
 
+### Troubleshooting
+The widget is deactivated by default and will be enabled by SD Maid when it enables the pro features. Sometimes the widget does not become immediately visible because the launcher does not update its widget list, in these cases, a device reboot (or restarting the launcher) solves the issue.
+
