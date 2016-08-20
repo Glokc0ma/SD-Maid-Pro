@@ -47,8 +47,8 @@ On some devices the `Documents` app that opens after pressing the orange entry i
 The activity through which you grant SD Maid access is part of the "Documents" app, specifically the app with the packagename `com.android.documentsui` and `com.android.externalstorage`. This should be available on any 5.0+ ROM as it is part of the Android Open Source Project (AOSP). If you are getting this error you or someone else modified the ROM such that this app is either not installed or disabled. To check for it's existance you can enable "Show system apps" and then search for the packagename using SD Maids AppControl tool.
 
 #### Known solutions
-* Checking on rooted devices (or some Samsung devices with 'Package Disabler') if the app `Documents(com.android.documentsui)` has been disabled.
-* Ask the manufactor why his 5.0+ ROM is not Android CTS compliant (known case for some MIUI devices).
+* Check whether the app is disabled by default on your device. Some ROMs (common on MIUI ROMs) ship with these system apps disabled. It's usually possible to find the apps in the systems app list and enable them by hand.
+* Ask the manufactor why his 5.0+ ROM is not Android CTS compliant.
 
 ### Error: Invalid storage / Invalid input
 If you select the wrong storage location (or SD Maid is just not happy with the selection for any reason) you will see and error message and the entry will stay orange. In some cases it is possible that you selected the correct storage and it still said "Invalid" and didn't accept it. Reasons for that are usually related to your devices ROM (e.g. [#312](https://github.com/d4rken/sdmaid-public/issues/312) or [#231](https://github.com/d4rken/sdmaid-public/issues/231)).
