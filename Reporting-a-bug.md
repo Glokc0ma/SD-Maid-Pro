@@ -51,8 +51,14 @@ The most comfortable option is having SD Maid create the file for you. This obvi
 [[[ https://cloud.githubusercontent.com/assets/1439229/16135847/8e33e2a0-3426-11e6-9f93-ddcc9d4c9b34.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/16135847/8e33e2a0-3426-11e6-9f93-ddcc9d4c9b34.png)
 
 The created logfiles will be on your primary public storage in the same location where the trigger file was created.
-Example:
+
+Until SD Maid v4.2.13:
 ```
 <sdcard>/Android/data/eu.thedarken.sdm/files/logfiles/
 ```
-This folder is used SD Maid can write to it without any extra permissions or requirement, thus we can even use the debug run to troubleshoot permission issues :wink:.
+
+Since SD Maid v4.3.0:
+```
+<sdcard>/Android/data/eu.thedarken.sdm/cache/logfiles/
+```
+This folder is used as SD Maid can write to it without any extra permissions or requirements, thus we can use the debug run to troubleshoot permission issues too :wink:.
