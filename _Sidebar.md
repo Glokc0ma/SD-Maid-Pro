@@ -17,7 +17,6 @@
 * [AppCleaner](https://github.com/d4rken/sdmaid-public/wiki/Appcleaner)
 * [Duplicates](https://github.com/d4rken/sdmaid-public/wiki/Duplicates)
 * [Biggest](https://github.com/d4rken/sdmaid-public/wiki/Biggest)
-* [Last modified](https://github.com/d4rken/sdmaid-public/wiki/Last-modified)
 
 ### Extras
 * [QuickAccess](https://github.com/d4rken/sdmaid-public/wiki/QuickAccess)
