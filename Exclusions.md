@@ -4,14 +4,14 @@ Exclusions exclude items from SD Maids tools.
 ## Creating exclusions
 Note: For a new exclusion to take effect, the tool it should be applied to has to be refreshed.
 
-### Through tool results
+### Directly from results
 The easiest way to create an exclusion is to long press the item you want to exclude, in the tool where you don't want to see it again. Select it and choose "Exclusion" from the context menu. SD Maid will fill in all necessary details.
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/18717055/09aa5498-801f-11e6-97ad-8485379c8b4e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/18717055/09aa5498-801f-11e6-97ad-8485379c8b4e.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/18717226/9527dba8-801f-11e6-9e8f-420eec3f0e4a.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/18717226/9527dba8-801f-11e6-9e8f-420eec3f0e4a.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/18717283/b914d5c0-801f-11e6-9dcc-87cc5dce8985.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/18717283/b914d5c0-801f-11e6-9dcc-87cc5dce8985.png)
 
-### If you know where it is
+### By browsing to it
 You can do the same through locating the file in SD Maids [Explorer](https://github.com/d4rken/sdmaid-public/wiki/Explorer), which also offers such an action when selecting a file. Note that SD Maid will make it a **global exclusion** if you don't change it.
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/17080573/57bf10b0-5135-11e6-8ed5-9aeb519aafec.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17080573/57bf10b0-5135-11e6-8ed5-9aeb519aafec.png)
