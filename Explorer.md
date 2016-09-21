@@ -61,6 +61,9 @@ Helps you create a user filter for the [SystemCleaner](https://github.com/d4rken
 ### Save directory structure
 Will create a text file on your primary storage (e.g. root of your sdcard) that contains the file/directory structure (recursively) of the selected items. A better way than screenshots to share specific file setups with other users (or me :p).
 
+### Extract
+Tries to extract an ZIP based archive (`.zip`, `.apk` etc) into a new directory in the current path. The directory will be the filename appened with `-(1)` (or `-(2)` and so forth). Extraction is currently only possible on public storage.
+
 ## Advanced
 If you enter your email in SD Maids settings, the question marks on the right side of unknown entries become interactive, when tapping them a new window will open and extra window in which you can select one of your installed apps as being the owner of that file. Reports are processed manually and I'll update SD Maids definitions are checking the reports.
 SD Maid is and will always be a work in progress, as every day new apps come out :). If you see a folder of which you are sure that it belongs to a specific application, and SD Maid does not recognize it, you can report it. In the settings you can enter your email, after you have done that you can press the "?" in the Explorer and report it from inside the app. 
