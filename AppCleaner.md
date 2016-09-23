@@ -33,8 +33,9 @@ First lets get something straight: **Caches are not a bad thing.** Loading files
 In a perfect app world, all apps manage their cache perfectly and a tool such as this would be unnecessary. But the world isn't perfect and apps missmanage their cache by e.g. not limiting it's size. Often the user is given no control over it except for wiping the whole cache. The AppCleaner aims to provide the user with detailed information and more fine grained control over each apps cache.
 
 ### Why not just use the systems built-in functions?
-The systems cache clearing routines only cover the default caches. This means files that within the official `cache` folder in the official app data locations (e.g. `/data/data/<pkg>/cache` and `<sdcard>/Android/data/<pkg>/cache`).
-But apps may also create directories and files on the root of the sdcard and save their cache in those directories or use weird constelations such `.cache` or `/files/cache`.
+There are locations with cache-like files that Androids built-in function does not cover, but AppCleaner does. 
+The systems cache clearing routines only cover the default caches (e.g. `/data/data/<pkg>/cache` and `<sdcard>/Android/data/<pkg>/cache`).
+Apps are not forced to use these directories and may also create directories and files on the root of the sdcard and save their cache in those directories or use weird constelations such as `.cache` or `/files/cache`. This may be unintentional due to mistakes or not knowing any better, but can also be deliberate. The AppCleaner helps you manage this.
 
 ### What about clearing cache via recovery?
 The AppCleaner deletes individual application caches. Clearing cache via recovery wipes the `/cache` partition which is unrelated to app caches and contains system. 
