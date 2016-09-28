@@ -13,7 +13,7 @@
 * [Searcher](https://github.com/d4rken/sdmaid-public/wiki/Searcher)
 * [AppControl](https://github.com/d4rken/sdmaid-public/wiki/AppControl)
 * [CorpseFinder](https://github.com/d4rken/sdmaid-public/wiki/CorpseFinder)
-* [Systemcleaner](https://github.com/d4rken/sdmaid-public/wiki/SystemCleaner)
+* [SystemCleaner](https://github.com/d4rken/sdmaid-public/wiki/SystemCleaner)
 * [AppCleaner](https://github.com/d4rken/sdmaid-public/wiki/AppCleaner)
 * [Duplicates](https://github.com/d4rken/sdmaid-public/wiki/Duplicates)
 * [Biggest](https://github.com/d4rken/sdmaid-public/wiki/Biggest)
