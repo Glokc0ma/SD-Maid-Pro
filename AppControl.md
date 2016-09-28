@@ -15,6 +15,8 @@ Some actions can be executed on multiple apps, some only on single items. To exe
 [[[ https://cloud.githubusercontent.com/assets/1439229/14576166/4a13d6ba-0367-11e6-8820-5fb317144d5a.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14576166/4a13d6ba-0367-11e6-8820-5fb317144d5a.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14576235/aed12ac6-0367-11e6-8ccd-a1b3a69a8f5a.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14576235/aed12ac6-0367-11e6-8ccd-a1b3a69a8f5a.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14576303/268eff3e-0368-11e6-8710-09e13f663354.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14576303/268eff3e-0368-11e6-8710-09e13f663354.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/18914719/9769f71a-858e-11e6-8af8-d2eb1ec76073.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/18914719/9769f71a-858e-11e6-8af8-d2eb1ec76073.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/18914718/974bfc24-858e-11e6-94c7-e5a612f48567.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/18914718/974bfc24-858e-11e6-94c7-e5a612f48567.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/18858247/d70efd4a-846a-11e6-8f58-4886613a199f.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/18858247/d70efd4a-846a-11e6-8f58-4886613a199f.png)
 
 ## Actions
