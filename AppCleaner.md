@@ -24,6 +24,8 @@ This are general filters for categories of expendable files.
 * "Hidden caches" targets cache like files that are in non-default cache directories, e.g. `videoCache`, `.cache`.
 * "WebView caches" targets files downloaded by app internal browsers, e.g. if you an app shows you a webpage inside itself.
 
+[[[ https://cloud.githubusercontent.com/assets/1439229/19081902/3629b0b2-8a5c-11e6-9eab-483b94a46f4b.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19081902/3629b0b2-8a5c-11e6-9eab-483b94a46f4b.png)
+
 ### Other
 These filteres have specific targets such as certain filetypes or just one specific app.
 
@@ -33,7 +35,6 @@ These filteres have specific targets such as certain filetypes or just one speci
 * "WhatsApp sent files" targets files that WhatsApp creates when you send someone a picture of video through WhatsApp.
 * "WhatsApp received files" files received through WhatsApp.
 
-[[[ https://cloud.githubusercontent.com/assets/1439229/19081902/3629b0b2-8a5c-11e6-9eab-483b94a46f4b.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19081902/3629b0b2-8a5c-11e6-9eab-483b94a46f4b.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/19081901/36216e98-8a5c-11e6-89a5-b28ad52d9ae3.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19081901/36216e98-8a5c-11e6-89a5-b28ad52d9ae3.png)
 
 ## Settings
