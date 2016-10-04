@@ -8,6 +8,45 @@ This generally includes all official cache locations (i.e. `/data/data/<pkg>/cac
 
 The AppCleaner works on a per App basis, meaning that any file it checks is related to a known installed app. This is in contrast to the SystemCleaner which is generally unaware of any app<->file relation.
 
+[[[ https://cloud.githubusercontent.com/assets/1439229/19081899/361729ec-8a5c-11e6-97a0-3067db432b78.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19081899/361729ec-8a5c-11e6-97a0-3067db432b78.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/19081898/36126cc2-8a5c-11e6-8344-bd568411c4d8.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19081898/36126cc2-8a5c-11e6-8344-bd568411c4d8.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/19081900/361c5ea8-8a5c-11e6-8faa-96eb0f74ed8a.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19081900/361c5ea8-8a5c-11e6-8faa-96eb0f74ed8a.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/19081896/360df32c-8a5c-11e6-865a-43a815644185.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19081896/360df32c-8a5c-11e6-865a-43a815644185.png)
+
+## Filter
+
+The filter configuration which can be accessed from the toolbar allows you to further configure which type of "expendable" files SD Maid looks for.
+
+### Default
+This are general filters for categories of expendable files.
+
+* "Default caches" targets the files in default `<pkg>/cache/` folders on public and private storages.
+* "Hidden caches" targets cache like files that are in non-default cache directories, e.g. `videoCache`, `.cache`.
+* "WebView caches" targets files downloaded by app internal browsers, e.g. if you an app shows you a webpage inside itself.
+
+### Other
+These filteres have specific targets such as certain filetypes or just one specific app.
+
+* "Bug reporting" targets files created by bug/crash reporting tools in apps. Turning this on might make it more difficult for developers to improve their app if it crashes on your device. It can be quite useful though if you don't have internet and an app still creates files that it will never be able to send.
+* "Analytics" similar to "Bug reporting" just targeting analytics related files such as statistics about what you do in an app.
+* "Advertisement" files created or belonging to advertisement functionality, e.g. caches or collected infos.
+* "WhatsApp sent files" targets files that WhatsApp creates when you send someone a picture of video through WhatsApp.
+* "WhatsApp received files" files received through WhatsApp.
+
+[[[ https://cloud.githubusercontent.com/assets/1439229/19081902/3629b0b2-8a5c-11e6-9eab-483b94a46f4b.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19081902/3629b0b2-8a5c-11e6-9eab-483b94a46f4b.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/19081901/36216e98-8a5c-11e6-89a5-b28ad52d9ae3.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19081901/36216e98-8a5c-11e6-89a5-b28ad52d9ae3.png)
+
+## Settings
+
+* Include System-Apps: Whether system apps should be included in the results.
+* Sort mode: How the results should be sorted.
+* Minimum cache age: SD Maid can filter out files that are below a minimum cache age (in days). Note that SD Maid can not enforce this for all files on unrooted devices. See FAQ on why some exclusions don't work.
+* Skip running apps: Skip currently running apps. If running apps are not skipped they are killed before deleting their cache.
+* Show inaccessible items: Some items, especially on 6.0+ without root may be known to SD Maid, but can't be accessed (i.e. deleted).
+* `freeStorageAndNotify` is a trick that can be used on some ROMs (< Android 6.0) to clear private caches without root. It basically triggers the `System>Storage>Clear Cache` action. This can be turned off because using it also clears the default public caches. If you have cache files in public caches that you don't want deleted, e.g. have exclusions for, you have to disable this function such that SD Maids exclusions can take effect (because using this function outsources some work to the system which doesn't know about SD Maids exclusions).
+
+[[[ https://cloud.githubusercontent.com/assets/1439229/19081897/360e14b0-8a5c-11e6-81a5-0bf10d6acd01.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19081897/360e14b0-8a5c-11e6-81a5-0bf10d6acd01.png)
+
 ## When to use it?
 ### Low space
 Unless you are really low on free space it's generally not beneficial empty all your app caches every day. It's not harmful to your device or apps though. Low free space can negatively impact device performance, but this only happens below 10% or less (varies with storage) free space. Above it you would gain better performance by keeping a moderate file cache.
@@ -18,13 +57,6 @@ Imagine an email app, its great to have fast access to some mails, but the cache
 ### Misbehaving apps
 Some apps create ridiculous amounts of files in their cache folders, some during normal operations, some because of bugs. Large amounts of small files can negatively impact app performance as traversing all these files costs time. There are cases where apps use buggy analytics software that causes them to never transmit and or delete their analytics files, leading to over ~50.000 files to accumulate and slowing down the app (through the slowed down analytics software).
 It's also possible that apps screwed app their own cache management and start to display wrong files or fail to load, clearing their cache might help and is often less effort than reinstalling the app and setting it up again.
-
-## Settings
-* Include System-Apps: Whether system apps should be included in the results.
-* Sort mode: How the results should be sorted.
-* Minimum cache age: SD Maid can filter out files that are below a minimum cache age (in days). Note that SD Maid can not enforce this for all files on unrooted devices. See FAQ on why some exclusions don't work.
-* Skip running apps: Skip currently running apps. If running apps are not skipped they are killed before deleting their cache.
-* Show inaccessible items: Some items, especially on 6.0+ without root may be known to SD Maid, but can't be accessed (i.e. deleted).
 
 ## FAQ
 ### Why delete cache?
