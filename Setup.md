@@ -15,7 +15,6 @@ Secondary storage setup is a step that is only available on Android 5.0+. It's p
 Since Android 4.4 most devices no longer allow apps to write to the secondary storage (e.g. external/removable sdcards) and accessing sdcards through the SAF only works since 5.0. So sadly Android 4.4 users are out of luck.
 Anyways, if you reach this step, SD Maid will display a list of storage locations she would like to be granted access to.
 
-**Just because SD Maid asks you for this way of access doesn't mean access won't be possible otherwise (e.g. root, SDCard fix). It means SD Maid determined a better way of access that should be used. If SD Maid previously access, it will still be used, the best available (working) way of access will always be used.**
 #### Steps
 * Tap an orange entry, remember the location it displays, e.g. `/storage/sdcard1`
 * In the new window open the drawer on the left and select the related storage entry
