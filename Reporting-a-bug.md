@@ -12,6 +12,7 @@ Gather basic information about your setup, which includes
 * What kind of Android version and or custom ROM it's running (e.g. latest stock Android 6.0.1)
 * If your device is rooted or unrooted (e.g. Rooted with SuperSU v2.67)
 * What version of SD Maid and (if applicable) SD Maid Pro you were running (e.g. SD Maid v4.1.0, Unlocker v4.0.2)
+* Long press the settings menu entry, which will open the debug menu. At the top of the page is your install-id tap it to copy it and attach it to your bug report. This way I will be able to check for automatic crash reports from your device.
 
 Good, now we have a baseline for what kind of device setup you have. Now add a little description describing your issue:
 * What happened?
@@ -51,11 +52,6 @@ The most comfortable option is having SD Maid create the file for you. This obvi
 [[[ https://cloud.githubusercontent.com/assets/1439229/16135847/8e33e2a0-3426-11e6-9f93-ddcc9d4c9b34.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/16135847/8e33e2a0-3426-11e6-9f93-ddcc9d4c9b34.png)
 
 The created logfiles will be on your primary public storage in the same location where the trigger file was created.
-
-Until SD Maid v4.2.13:
-```
-<sdcard>/Android/data/eu.thedarken.sdm/files/logfiles/
-```
 
 Since SD Maid v4.3.0:
 ```
