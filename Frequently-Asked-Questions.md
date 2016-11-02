@@ -14,6 +14,9 @@ The following action are known to fix this in some instances:
 * Rebooting the device.
 * Using "Clear Data" on the Google Play app (`com.android.vending`).
 
+### Google Play is asking me to buy the app again
+If you uninstall an app shortly after purchasing it, Google Play automatically refunds your purchase.
+
 ### SD Maid is not enabling the pro features
 If the both SD Maid (`eu.thedarken.sdm`) and the SD Maid Pro plugin/unlocker (`eu.thedarken.sdm.unlocker`) are installed, SD Maid should enable all pro features. Detection of the SD Maid Pro happens on app launch and when closing/opening the UI.
 
