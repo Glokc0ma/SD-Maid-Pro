@@ -1,4 +1,16 @@
 # FAQ
+## General
+### Screen overlay detected
+The warning "Screen overlay detected" is a popup dialog you may see when trying to grant app permissions on an Android 6.0+ device. This is a security feature (from Android, not SD Maid) which prevents you from granting any permissions while an app is active that can draw on the screen, because malicious apps could alter the text of the permission dialog. The warning is not SD Maid specific and it's not SD Maid using the a screen overlay, but another application on your device.
+
+Solution:
+* Open settings
+* Disable the overlay permissions for all listed apps
+* Grant SD Maid (or any other app) it's permission
+* Enable the overlay permissions again
+
+[[[ https://cloud.githubusercontent.com/assets/1439229/19970701/1d9a9e9c-a1dd-11e6-8ed5-06fb81443707.jpg | height = 150px]]](https://cloud.githubusercontent.com/assets/1439229/19970701/1d9a9e9c-a1dd-11e6-8ed5-06fb81443707.jpg)
+
 ## SD Maid Pro
 ### Why are there two SD Maid apps?
 SD Maid consists of two apps, the free app and a paid app. The paid app is a plugin that enables extra features in the free app. The paid app can't be used alone, while the free app (sans pro features) can be used on its own. This is mainly for historical reasons as IAPs (In-App-Purchases) did not exist 5 years ago when SD Maid launched. While this will probably change at some point, it currently also has the advantage that there is no dependency on Google-Services to enable in-app-purchases.
