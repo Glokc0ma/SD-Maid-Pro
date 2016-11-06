@@ -21,6 +21,8 @@ SD Maid offers a few ways of automatically selecting items:
 * Keep the most nested item (the item that is most nested, e.g. `/nested/more_nested/most_nested`)
 * Keep the top level item (shortest path, e.g. `/sdcard/top_level`)
 * Keep a random item
+* Keep on primary storage (the remaining file should be on your devices internal sdcard)
+* Keep on secondary storage (the remaining file should be on your external removable sdcard)
 
 The procedure set as default will be used when the Duplicates tool is used through the [Scheduler](https://github.com/d4rken/sdmaid-public/wiki/Scheduler), [QuickAccess](https://github.com/d4rken/sdmaid-public/wiki/QuickAccess) or Widget.
 
