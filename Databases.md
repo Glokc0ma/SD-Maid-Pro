@@ -5,7 +5,7 @@ When databases grow in size, additional "pages" are added to it. When the data i
 
 ## FAQ
 ### Some of my database fail to be optimized
-It is completely normal that not all databases can be processed by SD Maid. Databases with unknown custom features/options may be skipped or fail to be processed.
+It is completely normal that not all databases can be processed by SD Maid. Databases with unknown custom features/options may be skipped or fail to be processed. In these cases it is recommended to exclude them (long press -> select exclude).
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/20381741/0b9cca04-aca9-11e6-9dc9-8f71e45877a0.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/20381741/0b9cca04-aca9-11e6-9dc9-8f71e45877a0.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/20381745/0f07dad0-aca9-11e6-9954-933decf58fe0.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/20381745/0f07dad0-aca9-11e6-9954-933decf58fe0.png)
