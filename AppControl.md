@@ -56,3 +56,25 @@ The most popular type of receiver people are usually looking for are `ON_BOOT` r
 [[[ https://cloud.githubusercontent.com/assets/1439229/14576241/b7e336cc-0367-11e6-8ee9-c05d494acb62.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14576241/b7e336cc-0367-11e6-8ee9-c05d494acb62.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14576243/bb52af4a-0367-11e6-94da-d27fe173065b.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14576243/bb52af4a-0367-11e6-94da-d27fe173065b.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14576245/bc7b1d4e-0367-11e6-9f06-71c6c06e8054.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14576245/bc7b1d4e-0367-11e6-9f06-71c6c06e8054.png)
+
+## Settings
+### Include System-Apps
+Whether SD Maid should show system apps in the list.
+
+### Keep desirable remnants
+Some files belonging to an app may still be useful after uninstalling the app, e.g. photos or backups. Enabling this setting would cause SD Maid to, e.g. remove backups from TitaniumBackup if you uninstall TitaniumBackup.
+
+### Preload app estate
+An apps estate is the collection of all the files and directories it owns across all detected storages. This is disabled by default to speed up the app search. Sorting by size will implicitly enable this. If app estate is not preloaded, you can still press "Scan" in the size box within an apps details.
+
+### Export destination
+Where files (e.g. share app list or exported apks) are placed.
+
+### Double check apps
+Some ROMs don't correctly update an apps state (e.g. enabled/disabled) (as returned through the PackageManager API). Enabling this option will cause SD Maid to double check the state of each app received through the API with the content of the packages.xml file. **Unless you are have issues with exactly this, don't enable it.**
+
+### Add shortcut
+Adds an app shortcut to your home screen that directly opens the appcontrol page and refreshs it.
+
+
+[[[ https://cloud.githubusercontent.com/assets/1439229/20377644/4e9fc21a-ac91-11e6-8315-ec3e67d5ba88.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/20377644/4e9fc21a-ac91-11e6-8315-ec3e67d5ba88.png)
