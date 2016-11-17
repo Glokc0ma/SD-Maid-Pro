@@ -17,6 +17,7 @@
 * [AppCleaner](https://github.com/d4rken/sdmaid-public/wiki/AppCleaner)
 * [Duplicates](https://github.com/d4rken/sdmaid-public/wiki/Duplicates)
 * [Storage Analyzer](https://github.com/d4rken/sdmaid-public/wiki/Storage-Analyzer)
+* [Databases](https://github.com/d4rken/sdmaid-public/wiki/Databases)
 
 ### Extras
 * [QuickAccess](https://github.com/d4rken/sdmaid-public/wiki/QuickAccess)
