@@ -1,5 +1,13 @@
 # FAQ
 ## General
+### I just want to clean my device, what to do?
+* Install SD Maid, if you own [SD Maid Pro](https://play.google.com/store/apps/details?id=eu.thedarken.sdm.unlocker), then also install the Unlocker now.
+* Start SD Maid, the app will open on the [Quickaccess](https://github.com/d4rken/sdmaid-public/wiki/QuickAccess) page.
+* Press the green scan bar at the bottom of the screen.
+* Because this is the first time you started SD Maid, you will be asked to complete the [setup](https://github.com/d4rken/sdmaid-public/wiki/Setup).
+* After completing the setup, SD Maid will run the "scan" part of each tool.
+* When the scan finishes you can press "execute" to delete/optimize, or press a specific tool to view more details.
+
 ### Screen overlay detected
 The warning "Screen overlay detected" is a popup dialog you may see when trying to grant app permissions on an Android 6.0+ device. This is a security feature (from Android, not SD Maid) which prevents you from granting any permissions while an app is active that can draw on the screen, because malicious apps could alter the text of the permission dialog. The warning is not SD Maid specific and it's not SD Maid using the a screen overlay, but another application on your device.
 
