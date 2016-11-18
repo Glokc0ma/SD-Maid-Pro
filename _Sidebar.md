@@ -1,11 +1,10 @@
-## SD Maid - Wiki
-
-### Basics
+### Intro
 * [Home](https://github.com/d4rken/sdmaid-public/wiki)
-* [Setup](https://github.com/d4rken/sdmaid-public/wiki/Setup)
-* [FAQ](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions)
-* [Free vs Pro](https://github.com/d4rken/sdmaid-public/wiki/Free-vs-Pro-Version)
+* [Frequently asked questions](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions)
 * [Reporting a bug](https://github.com/d4rken/sdmaid-public/wiki/Reporting-a-bug)
+
+### Core
+* [Setup](https://github.com/d4rken/sdmaid-public/wiki/Setup)
 * [Settings](https://github.com/d4rken/sdmaid-public/wiki/Settings)
 
 ### Tools
