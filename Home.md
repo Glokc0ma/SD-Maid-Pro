@@ -8,3 +8,4 @@ If you have a question read through the wiki and checkout the [frequently asked 
 * [XDA-Developers.com](http://forum.xda-developers.com/showthread.php?t=1013063)
 * [Beta community on Google+](https://plus.google.com/u/0/b/116634499773478773276/communities/100352490623212021708)
 * [reddit.com/r/sdmaid](https://www.reddit.com/r/sdmaid/) 
+
