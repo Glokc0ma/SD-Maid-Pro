@@ -6,6 +6,7 @@
 * [FAQ](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions)
 * [Free vs Pro](https://github.com/d4rken/sdmaid-public/wiki/Free-vs-Pro-Version)
 * [Reporting a bug](https://github.com/d4rken/sdmaid-public/wiki/Reporting-a-bug)
+* [Settings](https://github.com/d4rken/sdmaid-public/wiki/Settings)
 
 ### Tools
 * [Overview](https://github.com/d4rken/sdmaid-public/wiki/Overview)
