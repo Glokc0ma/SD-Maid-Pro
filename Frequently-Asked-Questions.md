@@ -42,6 +42,22 @@ In short: **Use the latest version of SD Maid available for your device.**
 
 
 ## SD Maid Pro
+### Free vs Pro Version
+The "Pro" version of SD Maid also called the "Unlocker" is a plugin, it's not a standalone application.
+You should install it toegether with the free version of SD Maid and then start the version. It will detect the plugin and enable all extra features.
+
+Pro features:
+* User defined filters
+* AppCleaner tool
+* Duplicates tool
+* Scheduling
+* QuickAccess widget
+* File previews
+* A searchable history of SD Maids actions
+* Launcher shortcutus to specific tools
+* Additional search options
+* Sleeping well, knowing the developer is motivated to keep developing :tada: 
+
 ### Why are there two SD Maid apps?
 SD Maid consists of two apps, the free app and a paid app. The paid app is a plugin that enables extra features in the free app. The paid app can't be used alone, while the free app (sans pro features) can be used on its own. This is mainly for historical reasons as IAPs (In-App-Purchases) did not exist 5 years ago when SD Maid launched. While this will probably change at some point, it currently also has the advantage that there is no dependency on Google-Services to enable in-app-purchases.
 
