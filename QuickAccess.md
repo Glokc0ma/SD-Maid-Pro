@@ -16,6 +16,9 @@ The Duplicates tool is by default not visible and has to be enabled in the setti
 
 Each tool triggered from Quickaccess will run with the same settings it would run if done from its full view.
 
+[[[ https://cloud.githubusercontent.com/assets/1439229/20534317/1c11ad50-b0e1-11e6-83d4-44465f16a141.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/20534317/1c11ad50-b0e1-11e6-83d4-44465f16a141.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/20534323/1e3f0c76-b0e1-11e6-9b24-c9386083aa6e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/20534323/1e3f0c76-b0e1-11e6-9b24-c9386083aa6e.png)
+
 ## QuickAccess widget
 The QuickAccess widget is only available in SD Maid Pro. It allows you to place a widget on your homescreen that will trigger one or multiple of the QuickAccess tools. In contrast to the QuickAccess page, actions from the widget are always "single pass", meaning that scan and deletion will be done in one pass and there will be no confirmation either.
 
