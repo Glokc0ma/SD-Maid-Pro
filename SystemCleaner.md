@@ -157,3 +157,6 @@ A user filter can be be exported as well as imported. The export format for such
     ]
 }
 ```
+
+## Settings
+The system cleaner has no extra settings as of `v4.4.1`.
