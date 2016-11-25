@@ -49,6 +49,6 @@ Example: To only find PDF files from 3 days ago you could off the option *implic
 ## Settings
 No extra settings are available as of `v4.4.1`.
 
-## Search locations
+### Search locations
 The search locations are set automatically by SD Maid depending on what storages are detected.
 Without root, all public storages will be searched, this means any primary and secondary storage that is also visible in SD Maids [Overview page](https://github.com/d4rken/sdmaid-public/wiki/Overview). Rooted devices can enable an option to let the search start at `/` (note: `hwvefs`,`proc`,`dev`,`sys` and `acct` are skipped).
