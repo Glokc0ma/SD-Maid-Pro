@@ -12,12 +12,6 @@ You navigate down the directory tree by tapping folders to enter. Going backward
 [[[ https://cloud.githubusercontent.com/assets/1439229/14575338/6e409a60-0361-11e6-808b-b0d62bb101a4.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575338/6e409a60-0361-11e6-808b-b0d62bb101a4.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14575339/6f53af50-0361-11e6-921f-e81a232d2eb4.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575339/6f53af50-0361-11e6-921f-e81a232d2eb4.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14575342/7087c92e-0361-11e6-88b6-b4fc384c0575.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575342/7087c92e-0361-11e6-88b6-b4fc384c0575.png)
-[[[ https://cloud.githubusercontent.com/assets/1439229/14576144/10608e7c-0367-11e6-8f62-689ce0f3392a.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14576144/10608e7c-0367-11e6-8f62-689ce0f3392a.png)
-
-## Bookmarks
-On the right screen side sliding out side drawer. It contains a bookmarks manager that provides a set of shortcuts to interesting default locations. You can add new entries by entering a folder, then opening the bookmarks drawer and pressing the plus button to the right of the path in the browser bar. Bookmarks can be removed by long pressing them.
-
-[[[ https://cloud.githubusercontent.com/assets/1439229/14575343/71a67382-0361-11e6-839f-6103d337ee30.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575343/71a67382-0361-11e6-839f-6103d337ee30.png)
 
 ## Operations
 Most operations are item related, that means you have to long press an item to select one (or multiple) such that the context menu becomes visible and then select an operation out of the context menu.
@@ -63,6 +57,35 @@ Will create a text file on your primary storage (e.g. root of your sdcard) that 
 
 ### Extract
 Tries to extract an ZIP based archive (`.zip`, `.apk` etc) into a new directory in the current path. The directory will be the filename appened with `-(1)` (or `-(2)` and so forth). Extraction is currently only possible on public storage.
+
+## Bookmarks
+On the right screen side sliding out side drawer. It contains a bookmarks manager that provides a set of shortcuts to interesting default locations. You can add new entries by entering a folder, then opening the bookmarks drawer and pressing the plus button to the right of the path in the browser bar. Bookmarks can be removed by long pressing them.
+
+[[[ https://cloud.githubusercontent.com/assets/1439229/14575343/71a67382-0361-11e6-839f-6103d337ee30.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575343/71a67382-0361-11e6-839f-6103d337ee30.png)
+
+## Settings
+### Remember
+Try to start in the same directy as you were previously in, after closing+reopening SD Maid.
+
+### Research owner
+Whether SD Maid should try to determine owner ship of files and directors. This is responsible for the little app icons in each row. This setting also influences whether SD Maid displays a small sdcard symbol in each row that is a mount-point on the device.
+
+### SystemCleaner
+Whether SD Maid should test if this file/directory fits any existing SystemCleaner filter. This includes both default and user-made filters. If it fits, the SystemCleaner icon will be displayed.
+
+### AppCleaner
+Whether SD Maid should test if this file/directory fits any existing AppCleaner filter. This includes both default and user-made filters. If it fits, the AppCleaner icon will be displayed.
+
+### Sort mode
+How list entries should be sorted, by default it's sorted like in Windows. By name, but directories first.
+
+### Add shortcut
+Adds an "app-like" shortcut to your launcher that directly takes you to the Explorer and loads the current directory.
+
+### Actions
+There are a few extra file/directory context actions that are not shown by default, you can enable them here.
+
+[[[ https://cloud.githubusercontent.com/assets/1439229/14576144/10608e7c-0367-11e6-8f62-689ce0f3392a.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14576144/10608e7c-0367-11e6-8f62-689ce0f3392a.png)
 
 ## Advanced
 If you enter your email in SD Maids settings, the question marks on the right side of unknown entries become interactive, when tapping them a new window will open and extra window in which you can select one of your installed apps as being the owner of that file. Reports are processed manually and I'll update SD Maids definitions are checking the reports.
