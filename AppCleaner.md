@@ -48,18 +48,17 @@ These filteres have specific targets such as certain filetypes or just one speci
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/19081897/360e14b0-8a5c-11e6-81a5-0bf10d6acd01.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19081897/360e14b0-8a5c-11e6-81a5-0bf10d6acd01.png)
 
-## When to use it?
-### Low space
+## FAQ
+### When to use it?
+#### Low space
 Unless you are really low on free space it's generally not beneficial empty all your app caches every day. It's not harmful to your device or apps though. Low free space can negatively impact device performance, but this only happens below 10% or less (varies with storage) free space. Above it you would gain better performance by keeping a moderate file cache.
 
-#### Example
-Imagine an email app, its great to have fast access to some mails, but the cache also contains things like pictures from 3 day old emails. Now be honest how often do you really go back to view a few days old content? In most cases I'd rather have more free space and let the app just re-cache the files when they are needed. Additionally some of the cache files might already be stale now and would have to be reloaded anyways or not at all.
+> Imagine an email app, its great to have fast access to some mails, but the cache also contains things like pictures from 3 day old emails. Now be honest how often do you really go back to view a few days old content? In most cases I'd rather have more free space and let the app just re-cache the files when they are needed. Additionally some of the cache files might already be stale now and would have to be reloaded anyways or not at all.
 
-### Misbehaving apps
+#### Misbehaving apps
 Some apps create ridiculous amounts of files in their cache folders, some during normal operations, some because of bugs. Large amounts of small files can negatively impact app performance as traversing all these files costs time. There are cases where apps use buggy analytics software that causes them to never transmit and or delete their analytics files, leading to over ~50.000 files to accumulate and slowing down the app (through the slowed down analytics software).
 It's also possible that apps screwed app their own cache management and start to display wrong files or fail to load, clearing their cache might help and is often less effort than reinstalling the app and setting it up again.
 
-## FAQ
 ### Why delete cache?
 First lets get something straight: **Caches are not a bad thing.** Loading files from cache instead of downloading or recalculating them again can make loading faster and save device resources (battery/cpu/bandwidth). 
 
