@@ -55,7 +55,8 @@ Some corpses are considered "keepers" by SD Maid (e.g. backups, music) and will 
 ### Uninstall watcher
 The uninstall watcher is part of SD Maid Pro. It enables the CorpseFinder to automatically run after an app has been uninstalled. Should the corpse search return any items that are related to previously uninstalled app, then their name and size will be displayed in a popup and you have the change to delete them.
 
-## Reporting false positives
+## FAQ
+### Reporting false positives
 If you think the CorpseFinder got it wrong and the results contain a false positive, you can long report by long pressing the item or sending me an email. 
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/14577417/0b5d103c-0374-11e6-8064-cae8dca50891.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14577417/0b5d103c-0374-11e6-8064-cae8dca50891.png)
