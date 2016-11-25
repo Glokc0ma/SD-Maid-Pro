@@ -28,7 +28,7 @@ The procedure set as default will be used when the Duplicates tool is used throu
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/19916186/0f90605a-a0b8-11e6-82c9-6944858a89e2.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19916186/0f90605a-a0b8-11e6-82c9-6944858a89e2.png)
 
-## Options
+## Settings
 ### Search locations
 Where the tool will search. By default SD Maid will search all public storages. You can modify this and remove locations but be careful when adding locations to not ask SD Maid to search the same storage twice. SD Maid has a lot of failsafes against this, but Androids filesystem is quite complicated.
 
@@ -37,6 +37,6 @@ The default selection procedure.
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/19916188/0f90fb00-a0b8-11e6-9e14-96b554b07e65.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19916188/0f90fb00-a0b8-11e6-9e14-96b554b07e65.png)
 
-## Frequently asked questions
+## FAQ
 ### I deleted duplicates but now can't find my pictures
 Your gallery app is just not showing the picture because the remaining copy of the image is in a location that's not searched by the gallery app. Make your gallery app search that extra location or move the image into a folder which the gallery app indexes. In some cases a device reboot can help as it forces the devices to reindex media on your device.
