@@ -57,6 +57,7 @@ Pro features:
 * Launcher shortcutus to specific tools
 * Additional search options
 * Sleeping well, knowing the developer is motivated to keep developing :tada: 
+* Android 7.1 app icon shortcuts
 
 ### Why are there two SD Maid apps?
 SD Maid consists of two apps, the free app and a paid app. The paid app is a plugin that enables extra features in the free app. The paid app can't be used alone, while the free app (sans pro features) can be used on its own. This is mainly for historical reasons as IAPs (In-App-Purchases) did not exist 5 years ago when SD Maid launched. While this will probably change at some point, it currently also has the advantage that there is no dependency on Google-Services to enable in-app-purchases.
