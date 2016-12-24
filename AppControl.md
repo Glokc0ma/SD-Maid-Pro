@@ -37,6 +37,9 @@ Tries to copy the apps `.apk` file from internal private storage to your public 
 ### Freeze app
 Requires root. Disables the app. The app will not be visible and can't start itself. It has to be enabled again to work. No dataloss occurs and this state also persists if you uninstall SD Maid. Any good app enabled/disabler app can enable apps that have been disabled with SD Maid and vice versa.
 
+### Move app
+Requires root. If your device supports it, you can move apps from internal to external storage and vice versa. If an app does not want to be moved, SD Maid can force it, but the moved app may no longer run correctly. Excepted for the "force" option, this action is the same one as moving the app from the systems app menu. You can select multiple apps in the list and move them in batches.
+
 ### Delete app
 Deletes the app and it's data. This includes the systems uninstall process as well as actions similar to SD Maids [Corpsefinder](https://github.com/d4rken/sdmaid-public/wiki/Corpsefinder). Unrooted devices have to confirm each uninstall, rooted devices can batch uninstall without extra confirmation.
 
