@@ -22,6 +22,6 @@ This option is automatically enabled for beta releases.
 
 ### Storage access
 Allows to view, add or remove storage permissions granted to SD Maid within Androids "Storage access framework". This is related to this [secondary storage setup](https://github.com/d4rken/sdmaid-public/wiki/Setup#secondary-storage-setup).
-You usually don't need to do anything, but may use this to manually add a storage permission if you permanently skipped a setup step. Removing a permission here may trigger the setup again during the session. Adding anything here besides the root public storage's has no benefit.
+You usually don't need to do anything, but may use this to manually add a storage permission if you permanently skipped a setup step. Removing a permission here may trigger the setup again during the session. Adding anything here besides the root of public storage's has no benefit.
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/20633173/ff674ec0-b343-11e6-8e83-bc30a5fa9d9a.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/20633173/ff674ec0-b343-11e6-8e83-bc30a5fa9d9a.png)
