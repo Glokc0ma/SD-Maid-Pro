@@ -21,7 +21,13 @@ Where SD Maid will look for databases. By default this is alread set to all acce
 If enabled, SD Maid follows symbolic links while searching for databases. This setting may be of interest to you if SD Maid finds the same database twice or none at all, due to your storage setup (folder-mount, link2sd etc).
 
 ### Skip running apps
-By default, SD Maid will skip running apps to prevent negative side-effects. Some apps don't take kindly to their database being in use by another app, then assume their database was corrupted, causing them to recreate it.
-When not skipping running apps, SD Maid will attempt to stop the app before working on it's database.
+Some apps don't take kindly to their database being in use by another app. They assume their database was corrupted and recreate it while loosing the previous data. SD Maids default settings prioritize safety over thoroughness and thus databases of running apps are skipped.
+
+Theoretically, improving databases access for those apps that are running should have the most impact (whether you can notice that is a different story), as they are likely to be among your most used apps. Active apps like instant-messenger or email apps are usually the msot problematic. They run often and also react to events, which means there is a high chance that they try to access their database while it's being worked on.
+
+This risk is both higher and lower on unrooted devices. Higher because SD Maid can only kill app services without root permission, and lower because such at risk apps rarely put databases in public storage (and private storage can't be accessed by SD Maid without root).
+On rooted devices it's vice versa. SD Maid can SIGSTOP the app process (i.e. freeze it in place) which means it can't unexpectedly start and access the database, but there are also a lot more databases that will be processed.
+
+You would disable this option if you want to maximize the tools effectiveness and are willing to troubleshoot a few app issues. You would use the tool without the option and then add an exclusion for every negatively affected app.
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/20381754/13c4a058-aca9-11e6-964c-72ac04fe93d3.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/20381754/13c4a058-aca9-11e6-964c-72ac04fe93d3.png)
