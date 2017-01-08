@@ -15,7 +15,7 @@ Secondary storage setup is a step that is only available on Android 5.0+. It's p
 Since Android 4.4 most devices no longer allow apps to write to the secondary storage (e.g. external/removable sdcards) and accessing sdcards through the SAF only works since 5.0. So sadly Android 4.4 users are out of luck.
 Anyways, if you reach this step, SD Maid will display a list of storage locations she would like to be granted access to.
 
-#### Steps
+### Steps
 * Tap an orange entry, remember the location it displays, e.g. `/storage/sdcard1`
 * In the new window open the drawer on the left and select the related storage entry
 * If there is no entry for your sdcard, close the drawer again, tap the overflow menu button in the top right corner and select `Show sdcards`, then repeat the previous step.
@@ -29,10 +29,11 @@ You should now have returned to SD Maid and the previously orange entry is green
 [[[ https://cloud.githubusercontent.com/assets/1439229/14230457/7f1a8e62-f958-11e5-8713-951b4500f49e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230457/7f1a8e62-f958-11e5-8713-951b4500f49e.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png)
 
-### Error: Documents window is empty (shows no sdcards)
+### Issues
+#### Error: Documents window is empty (shows no sdcards)
 On some devices the `Documents` app that opens after pressing the orange entry is empty. No storage can be chosen despite having clicked `Show sdcards`. This means that your ROM (not SD Maid) does not correctly recognize your extra storage. A few Galaxy (S7/Note4) have this issue, seems to depend on how/when the sdcard was setup.
 
-#### Known solutions
+##### Known solutions
 * Make sure that the app `External Storage (com.android.externalstorage)` has not been disabled.
 * Formatting the sdcard. Possibly removing and reinserting the sdcard.
 * Note: Currently due to a bug in SD Maid this skip can not be stepped. Update 4.1.4 will fix this soon ([#352](https://github.com/d4rken/sdmaid-public/issues/352)).
@@ -42,34 +43,34 @@ On some devices the `Documents` app that opens after pressing the orange entry i
 [[[ https://cloud.githubusercontent.com/assets/1439229/14278051/10a37028-fb26-11e5-9332-1be70f417221.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14278051/10a37028-fb26-11e5-9332-1be70f417221.png)
 [[[https://cloud.githubusercontent.com/assets/1439229/14278054/11e17aa2-fb26-11e5-8023-bbc16fd4cac2.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14278054/11e17aa2-fb26-11e5-8023-bbc16fd4cac2.png)
 
-### Error: Activity not found
+#### Error: Activity not found
 The activity through which you grant SD Maid access is part of the "Documents" app, specifically the app with the packagename `com.android.documentsui` and `com.android.externalstorage`. This should be available on any 5.0+ ROM as it is part of the Android Open Source Project (AOSP). If you are getting this error you or someone else modified the ROM such that this app is either not installed or disabled. To check for it's existance you can enable "Show system apps" and then search for the packagename using SD Maids AppControl tool.
 
-#### Known solutions
+##### Known solutions
 * Check whether the app is disabled by default on your device. Some ROMs (common on MIUI ROMs) ship with these system apps disabled. It's usually possible to find the apps in the systems app list and enable them by hand.
 * Ask the manufactor why his 5.0+ ROM is not Android CTS compliant.
 
-### Error: Invalid storage / Invalid input
+#### Error: Invalid storage / Invalid input
 If you select the wrong storage location (or SD Maid is just not happy with the selection for any reason) you will see and error message and the entry will stay orange. In some cases it is possible that you selected the correct storage and it still said "Invalid" and didn't accept it. Reasons for that are usually related to your devices ROM (e.g. [#312](https://github.com/d4rken/sdmaid-public/issues/312) or [#231](https://github.com/d4rken/sdmaid-public/issues/231)).
 
-#### Known solutions
+##### Known solutions
 * In some cases removing, formatting and reinserting the sdcard helps (Known cases: Galaxy S7 edge).
 * As a temporary solution you can permantly skip this step by choosing "Don't show again" from the overflow menu in the top right corner. If SD Maid v3 could acccess the storage previously, it should still be able to access it if you skip this step (e.g. on rooted devices). 
 
 [[[https://cloud.githubusercontent.com/assets/1439229/14360338/3230618e-fcf6-11e5-9369-37a53ac5ae95.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14360338/3230618e-fcf6-11e5-9369-37a53ac5ae95.png)
 [[[https://cloud.githubusercontent.com/assets/1439229/14256420/51aa30f8-fa99-11e5-9853-5d6b41e4cbbc.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14256420/51aa30f8-fa99-11e5-9853-5d6b41e4cbbc.png)
 
-### Error: "Documents has stopped"
+#### Error: "Documents has stopped"
 Certain LG and Samsung ROMs (Android 5.0-5.1 afaik) had a bug where the documents app crashed if one or more storage entries had an empty name. The specific exception is something a long a nullpointer exception.
 
-#### Known solutions
+##### Known solutions
 * Updating the ROM, in most cases Samsung and LG fixed this bug with an update.
 * Inserting the SD Card into another device and giving it a name (e.g. computer/notebook).
 
-### Error: Permissions don't survive reboots
-Despite successfully granting storage access, after rebooting the procedure has to be repeated. This is an Android bug and known to happen on 6.0 device where SD Maid has been installed to secondary storage (e.g. sdcard). Also see [#437](https://github.com/d4rken/sdmaid-public/issues/437).
+#### Error: Permissions don't survive reboots
+Despite successfully granting storage access, after rebooting the procedure has to be repeated. This is an Android bug and known to happen on all devices up to Android 7.0 where SD Maid has been installed to secondary storage (e.g. sdcard). Also see [#437](https://github.com/d4rken/sdmaid-public/issues/437).
 
-#### Known solutions
+##### Known solutions
 * Move SD Maid back to internal storage
 
 ## Binary setup
