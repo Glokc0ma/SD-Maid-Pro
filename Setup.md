@@ -30,7 +30,7 @@ You should now have returned to SD Maid and the previously orange entry is green
 [[[ https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png)
 
 ### Issues
-#### Error: Documents window is empty (shows no sdcards)
+#### Documents window is empty (shows no sdcards)
 On some devices the `Documents` app that opens after pressing the orange entry is empty. No storage can be chosen despite having clicked `Show sdcards`. This means that your ROM (not SD Maid) does not correctly recognize your extra storage. A few Galaxy (S7/Note4) have this issue, seems to depend on how/when the sdcard was setup.
 
 ##### Known solutions
@@ -43,14 +43,14 @@ On some devices the `Documents` app that opens after pressing the orange entry i
 [[[ https://cloud.githubusercontent.com/assets/1439229/14278051/10a37028-fb26-11e5-9332-1be70f417221.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14278051/10a37028-fb26-11e5-9332-1be70f417221.png)
 [[[https://cloud.githubusercontent.com/assets/1439229/14278054/11e17aa2-fb26-11e5-8023-bbc16fd4cac2.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14278054/11e17aa2-fb26-11e5-8023-bbc16fd4cac2.png)
 
-#### Error: Activity not found
+#### Activity not found
 The activity through which you grant SD Maid access is part of the "Documents" app, specifically the app with the packagename `com.android.documentsui` and `com.android.externalstorage`. This should be available on any 5.0+ ROM as it is part of the Android Open Source Project (AOSP). If you are getting this error you or someone else modified the ROM such that this app is either not installed or disabled. To check for it's existance you can enable "Show system apps" and then search for the packagename using SD Maids AppControl tool.
 
 ##### Known solutions
 * Check whether the app is disabled by default on your device. Some ROMs (common on MIUI ROMs) ship with these system apps disabled. It's usually possible to find the apps in the systems app list and enable them by hand.
 * Ask the manufactor why his 5.0+ ROM is not Android CTS compliant.
 
-#### Error: Invalid storage / Invalid input
+#### Invalid storage / Invalid input
 If you select the wrong storage location (or SD Maid is just not happy with the selection for any reason) you will see and error message and the entry will stay orange. In some cases it is possible that you selected the correct storage and it still said "Invalid" and didn't accept it. Reasons for that are usually related to your devices ROM (e.g. [#312](https://github.com/d4rken/sdmaid-public/issues/312) or [#231](https://github.com/d4rken/sdmaid-public/issues/231)).
 
 ##### Known solutions
@@ -60,14 +60,14 @@ If you select the wrong storage location (or SD Maid is just not happy with the 
 [[[https://cloud.githubusercontent.com/assets/1439229/14360338/3230618e-fcf6-11e5-9369-37a53ac5ae95.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14360338/3230618e-fcf6-11e5-9369-37a53ac5ae95.png)
 [[[https://cloud.githubusercontent.com/assets/1439229/14256420/51aa30f8-fa99-11e5-9853-5d6b41e4cbbc.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14256420/51aa30f8-fa99-11e5-9853-5d6b41e4cbbc.png)
 
-#### Error: "Documents has stopped"
+#### "Documents has stopped"
 Certain LG and Samsung ROMs (Android 5.0-5.1 afaik) had a bug where the documents app crashed if one or more storage entries had an empty name. The specific exception is something a long a nullpointer exception.
 
 ##### Known solutions
 * Updating the ROM, in most cases Samsung and LG fixed this bug with an update.
 * Inserting the SD Card into another device and giving it a name (e.g. computer/notebook).
 
-#### Error: Permissions don't survive reboots
+#### Permissions don't survive reboots
 Despite successfully granting storage access, after rebooting the procedure has to be repeated. This is an Android bug and known to happen on all devices up to Android 7.0 where SD Maid has been installed to secondary storage (e.g. sdcard). Also see [#437](https://github.com/d4rken/sdmaid-public/issues/437).
 
 ##### Known solutions
@@ -76,7 +76,7 @@ Despite successfully granting storage access, after rebooting the procedure has 
 ## Binary setup
 Binaries are extra files that SD Maid sets up on first run. These binaries are required for SD Maid to run. SD Maid itself has compatible binaries for the architectures X86, MIPS and ARM. Normally this all happens automatically and you don't have to do anything.
 
-### Error: Busybox error
+### Busybox error
 The busybox binary is a mandatory file that needs to be setup, if this is not possible SD Maid can not continue. It is usually located in `/data/data/eu.thedarken.sdm/files/busybox`, but may also be placed in other location to circumvent root restrictions on specific ROMs (also see: [binary status](https://github.com/d4rken/sdmaid-public/wiki/Overview#binary-status)).
 
 [[[https://cloud.githubusercontent.com/assets/1439229/14926312/e2b5c8da-0e4b-11e6-802f-b7436bed07b3.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14926312/e2b5c8da-0e4b-11e6-802f-b7436bed07b3.png)
@@ -84,7 +84,7 @@ The busybox binary is a mandatory file that needs to be setup, if this is not po
 #### Cause: Faulty root setup
 The most common reason for this error is a faulty root setup. SD Maid thinks it has root, but using it fails unexpectedly.
 
-Known solutions:
+##### Known solutions:
 * Remove SD Maid (the unlocker can stay installed), check that the folder `/data/data/eu.thedarken.sdm` is gone. Check that SD Maid is no longer visible in the SuperUser app. Reboot your device. Reinstall SD Maid. 
 * Reroot the device.
 * Clear the data of the SuperUser application.
@@ -94,18 +94,20 @@ Known solutions:
 #### Cause: Security restrictions
 Some ROMs, most commonly Samsung ROMs, employ stronger security measures such as KNOX. SD Maids own toolkit may not be sufficient to work around all restrictions. Due to the restrictions SD Maid might have root, and might have been able to setup the binary, but can not use all commands with root.
 
-Known solutions:
+##### Known solutions
 * Disable KNOX.
 * Change SELinux to `permissive`.* Try a different SuperUser application (e.g. SuperSU), which might offer better workarounds for specific security measures.
 
 #### Cause: Permission issues
 On both unrooted and rooted devices it is possible that directory permissions are so screwed up that it can not change or execute it's own files. This can happen during an update, reinstall, downgrade or any other case that interacts with a preexisting install.
 
+##### Known solutions
 * Clear data for SD Maid.
 * Reinstall SD Maid.
 
 #### Cause: Incompatible architecture
 It's unlikely, but possible that your device has a cpu architecture for which SD Maid does not have a binary file (outside of ARM/MIPS/X86).
 
+##### Known solutions
 * Install a compatible binary into your system which SD Maid can access.
 * Email SD Maids developer and ask if it possible to create a compatible binary.
