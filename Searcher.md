@@ -44,6 +44,8 @@ Note, for new files the modification date equals the creation date.
 Pressing search with no keywords will result in the same behavior you found previously in the *Last Modified* tool, but since both tools have been merged, you can now make use of additional search functions.
 Example: To only find PDF files from 3 days ago you could off the option *implicit wildcards* and enter `*.pdf` as keyword to only list pdf files in the results.
 
+By default items are shown in the order they were found. If either min or max age is set, the results will be sorted in chronological order, newest item first.
+
 [[[ https://cloud.githubusercontent.com/assets/1439229/18595328/7c4ce3d2-7c44-11e6-8de3-f9771a007744.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/18595328/7c4ce3d2-7c44-11e6-8de3-f9771a007744.png)
 
 ## Settings
