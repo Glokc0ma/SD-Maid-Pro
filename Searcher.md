@@ -7,6 +7,8 @@ You can just search for files or directories by names. You can even search for c
 * Create an [Exclusion](https://github.com/d4rken/sdmaid-public/wiki/Exclusion) for this entry.
 * Delete the item.
 
+By default items are shown in the order they were found by `find` in the filesystem.
+
 [[[ https://cloud.githubusercontent.com/assets/1439229/14575920/6b6ca352-0365-11e6-85cf-1cba000babdc.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575920/6b6ca352-0365-11e6-85cf-1cba000babdc.png)
 [[[https://cloud.githubusercontent.com/assets/1439229/14575918/6b6b5c40-0365-11e6-843e-ba27ff0aa103.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575918/6b6b5c40-0365-11e6-843e-ba27ff0aa103.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14575919/6b6b86b6-0365-11e6-95ec-01504b7b471a.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575919/6b6b86b6-0365-11e6-95ec-01504b7b471a.png)
