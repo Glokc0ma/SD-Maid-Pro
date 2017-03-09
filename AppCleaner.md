@@ -91,12 +91,12 @@ You may have seen apps that seem to achieve pre Android 6.0 behavior on unrooted
 Two things are used:
 The `Accessibility service` feature, which allows an app to read and interact with the screen just like a human (intended for people with disabilities), and the permission `SYSTEM_ALERT_WINDOW` which allows an app to draw on the screen over everything else.
 
-When an app using this "cleans cache", it will draw a screen over everything else (i.e. a curtain) and then behind it manually go into the system settings and press the "clear cache" button on every app. It literally clicks through each menu item just like you would do yourself. Depending on your ROM and device you can often hear the clicks or view screen changes. It also very noticeable if you try to exit the app at this point or rotate the device.
+An app "cleaning cache" this way will display a screen over everything else (i.e. a curtain) and then behind it open the settings screen of each app, then press the "clear cache" button on every app. It literally clicks through the menu just like you would do yourself. Depending on your ROM and device you can often hear the clicks or view screen changes. It also very noticeable if you try to exit the app at this point or rotate the device.
 
-So why is this not a good solution?
-This only works while the phone is unlocked, open and not in use. Think of it as your device being tapped on by another person, only one user can interact with the screen at a time. It's also not very fast because the app manually moves through the UI.
+Why is this not a good solution?
+This only works while the phone is unlocked, open and not in use. Think of it as your device being tapped on by another person. Only one user can interact with the screen at a time. It's also not very fast because the app manually moves through the UI. This approach requires to open each apps settings screen and then finding and pressing the "clear cache" button. It's the only way to reliably automate this, as some UI parts are consistent between devices/ROMs and others are not. The app settings screen is consistent, the device storage screen is not. You don't have this restriction though and could just go into your devices storage screen, find and tap the cache entry and achieve the same result.
 
-SD Maid doesn't offer this because it's neither fast and nor convenient and the same can be achieved going into the storage settings yourself and pressing "Clear Cache" button. It's likely even faster this way and you don't have to let an app tap around your device behind a curtain.
+SD Maid doesn't use the accessibility service this way because it's neither fast nor convenient and I don't think it's good to let an app tap around your device behind a curtain.
 
 ### Some AppCleaner exclusions don't work without root
 If you are using the AppCleaner on an unrooted device, you may have noticed that despite creating an exclusion for a specific app, it is still part of the scan results. This happens because we have to use the `freeStorageAndNotify` trick to delete the private cache files. Using this trick means that not SD Maid, but the system itself does the deletion and the system does not know about SD Maids exclusions. Since SD Maid v4.2.0+ `freeStorageAndNotify` can be turned off in the settings.
