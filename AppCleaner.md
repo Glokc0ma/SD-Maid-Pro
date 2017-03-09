@@ -85,5 +85,18 @@ Without root there is currently no known workaround without user interaction. As
 
 Be aware that a lot of other apps are not aware of this change in Android 6.0 and may still seem to work on first sight, because they don't confirm their operations.
 
+#### Accessibility service
+You may have seen apps that seem to achieve pre Android 6.0 behavior on unrooted Android 6.0+ devices. Meaning that they seem to be able to clear private caches on unrooted 6.0+ devices. I'll explain what they are doing and why SD Maid isn't doing it.
+
+Two things are used:
+The `Accessibility service` feature, which allows an app to read and interact with the screen just like a human (intended for people with disabilities), and the permission `SYSTEM_ALERT_WINDOW` which allows an app to draw on the screen over everything else.
+
+When an app using this "cleans cache", it will draw a screen over everything else (i.e. a curtain) and then behind it manually go into the system settings and press the "clear cache" button on every app. It literally clicks through each menu item just like you would do yourself. Depending on your ROM and device you can often hear the clicks or view screen changes. It also very noticeable if you try to exit the app at this point or rotate the device.
+
+So why is this not a good solution?
+This only works while the phone is unlocked, open and not in use. Think of it as your device being tapped on by another person, only one user can interact with the screen at a time. It's also not very fast because the app manually moves through the UI.
+
+SD Maid doesn't offer this because it's neither fast and nor convenient and the same can be achieved going into the storage settings yourself and pressing "Clear Cache" button. It's likely even faster this way and you don't have to let an app tap around your device behind a curtain.
+
 ### Some AppCleaner exclusions don't work without root
 If you are using the AppCleaner on an unrooted device, you may have noticed that despite creating an exclusion for a specific app, it is still part of the scan results. This happens because we have to use the `freeStorageAndNotify` trick to delete the private cache files. Using this trick means that not SD Maid, but the system itself does the deletion and the system does not know about SD Maids exclusions. Since SD Maid v4.2.0+ `freeStorageAndNotify` can be turned off in the settings.
