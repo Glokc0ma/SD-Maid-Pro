@@ -40,6 +40,8 @@ In short: **Use the latest version of SD Maid available for your device.**
 * SD Maid v3 was the main app version from 2013Q1 to 2016Q1. Its target is Android 2.3 to 4.0.
 * SD Maid v4 is the main app version since 2016Q1. Its target version is Android 4.1+.
 
+### MobileIron
+SD Maid doesn't require root, does not root a device and neither indicates a rooted device. Until MobileIron 9.3, SD Maid was blacklisted by packagename which could cause enterprise devices using the MobileIron system to be flagged as "out of compliance" while SD Maid was installed. If you previously had issues with this, update your MobileIron client to `9.3` or later and the issue should be fixed.
 
 ## SD Maid Pro
 ### Free vs Pro Version
