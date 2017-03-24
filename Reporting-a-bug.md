@@ -26,6 +26,13 @@ Good, now we have a baseline for what kind of device setup you have. Now add a l
 If SD Maid crashed I should have gotten an automatic crash report (unless you turned that off, but why would you...). To find this crash report on my server I need to identify your SD Maid installation. This happen through a UUID which is a unique and anonymous identifier SD Maid generates on it's first start. You can find it by going into the Overview section and expanding the box containing SD Maids version information or by long pressing the settings menu entry. Tap it to copy it to your clipboard and add it to your issue ticket.
 
 ### **Debugrun log**
+
+TL;DR
+1. Force stop SD Maid.
+2. Create the file `<sdcard>/Android/data/eu.thedarken.sdm/cache/logfiles/sdm-force-debug-run`
+3. Open SD Maid and everything will be written into the log file
+4. When you are done just exit SD Maid and mail/upload the log file
+
 The best thing you can provide to help fix an issue is a debug log of the problem manifesting. A debug log is a very detailed description of everything SD Maid did. Note that the file may private information in form of file names and pathes on your device.
 
 A debug run is initiated if SD Maids detects the file ```sdm-force-debug-run``` in its public cache folder.
