@@ -40,3 +40,11 @@ The default selection procedure.
 ## FAQ
 ### I deleted duplicates but now can't find my pictures
 Your gallery app is just not showing the picture because the remaining copy of the image is in a location that's not searched by the gallery app. Make your gallery app search that extra location or move the image into a folder which the gallery app indexes. In some cases a device reboot can help as it forces the devices to reindex media on your device.
+
+### read failed (I/O error)
+This error happens when SD Maid encounters an unexpected error while trying to calculate checksums. Possible reasons:
+
+* You manually changed the search pathes and now SD Maid is trying to search a location that is not readable with the available permission. By default SD Maid will correctly choose the pathes to scan all public storage (internal & external sdcard). You can reset the search pathes by removing them all. If no custom search pathes are defined, SD Maid will use the default search pathes.
+* The sdcard SD Maid is trying to read is faulty and/or has a corrupt file system. Remove the sdcard and try again. If the error no longer happens, try a different sdcard. If the error is still gone than the original sdcard was faulty. Backup any important data from it ASAP. You may try fixing and/or formatting it from a desktop computer which can fix corrupt filesystems but if the card itself is faulty, it will corrupt itself again.
+
+[[[ https://cloud.githubusercontent.com/assets/1439229/24590357/fe4cb89c-17eb-11e7-9cce-c6d4cecc2630.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/24590357/fe4cb89c-17eb-11e7-9cce-c6d4cecc2630.png)
