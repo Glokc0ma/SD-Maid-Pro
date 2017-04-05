@@ -43,6 +43,22 @@ In short: **Use the latest version of SD Maid available for your device.**
 ### MobileIron
 SD Maid doesn't require root, does not root a device and neither indicates a rooted device. Until MobileIron 9.3, SD Maid was blacklisted by packagename which could cause enterprise devices using the MobileIron system to be flagged as "out of compliance" while SD Maid was installed. If you previously had issues with this, update your MobileIron client to `9.3` or later and the issue should be fixed.
 
+### Recover deleted files
+If you accidentally deleted some files, you may be able to recover them. Restoring data depends on where the files were originally located and whether the space, that their deletion freed, has been occupied again.
+#### Removable storage
+Your best chance to restore files that were deleted from a removeable sdcard (e.g. `/storage/sdcard1`) is to plug the sdcard (or the device) into a desktop computer and run software from there.
+
+Recovery software:
+* http://www.cgsecurity.org/wiki/PhotoRec
+* https://www.piriform.com/recuva
+
+#### Internal storage
+Recovering files from internal storage requires a rooted device, e.g. internal sdcard (`/storage/emulated/0`) or private storage (`/data/data`). Root is required because recovery apps need to directly access the underlying storage device.
+
+Recovery apps:
+* https://play.google.com/store/apps/details?id=fahrbot.apps.undelete
+* https://play.google.com/store/apps/details?id=com.defianttech.diskdigger
+
 ## SD Maid Pro
 ### Free vs Pro Version
 The "Pro" version of SD Maid also called the "Unlocker" is a plugin, it's not a standalone application.
