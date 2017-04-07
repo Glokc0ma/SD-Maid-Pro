@@ -13,7 +13,7 @@ You navigate down the directory tree by tapping folders to enter. Going backward
 [[[ https://cloud.githubusercontent.com/assets/1439229/14575339/6f53af50-0361-11e6-921f-e81a232d2eb4.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575339/6f53af50-0361-11e6-921f-e81a232d2eb4.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14575342/7087c92e-0361-11e6-88b6-b4fc384c0575.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575342/7087c92e-0361-11e6-88b6-b4fc384c0575.png)
 
-## File size
+### File size
 The explorer displays two file sizes. Format: `allocated size (file size)`
 
 Allocated size is the space a file occupies on the in the filesystem. A filesystem stores data in blocks with fixed size. If the file size is 1Byte, but the blocksize of the filesystem is 4096Byte, then storing the file means that the allocated size is 4096Byte. Think of it like sorting items into same sized boxes, but each box may only contain one item.
