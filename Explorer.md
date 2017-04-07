@@ -13,6 +13,17 @@ You navigate down the directory tree by tapping folders to enter. Going backward
 [[[ https://cloud.githubusercontent.com/assets/1439229/14575339/6f53af50-0361-11e6-921f-e81a232d2eb4.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575339/6f53af50-0361-11e6-921f-e81a232d2eb4.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14575342/7087c92e-0361-11e6-88b6-b4fc384c0575.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575342/7087c92e-0361-11e6-88b6-b4fc384c0575.png)
 
+## File size
+The explorer displays two file sizes. Format: `allocated size (file size)`
+
+Allocated size is the space a file occupies on the in the filesystem. A filesystem stores data in blocks with fixed size. If the file size is 1Byte, but the blocksize of the filesystem is 4096Byte, then storing the file means that the allocated size is 4096Byte. Think of it like sorting items into same sized boxes, but each box may only contain one item.
+
+Usually the allocated size is within a few KB (the blocksize) of the file size. Depending on the file system there can be exception such as [sparse files](https://en.wikipedia.org/wiki/Sparse_file).
+
+In the following screenshot, the file `.twrps` is `0.91KB` in size but occupies `8KB` of filesystem space.
+
+[[[ https://cloud.githubusercontent.com/assets/1439229/24801885/2fe86c6c-1ba6-11e7-871b-0719579fcc4b.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/24801885/2fe86c6c-1ba6-11e7-871b-0719579fcc4b.png)
+
 ## Operations
 Most operations are item related, that means you have to long press an item to select one (or multiple) such that the context menu becomes visible and then select an operation out of the context menu.
 Note that due to Android constisting of many different storage areas, not all operations success on every time.
