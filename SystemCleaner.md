@@ -158,5 +158,8 @@ A user filter can be be exported as well as imported. The export format for such
 }
 ```
 
+[[[ https://cloud.githubusercontent.com/assets/1439229/24829195/bfe3f152-1c6d-11e7-8128-d60c734591e1.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/24829195/bfe3f152-1c6d-11e7-8128-d60c734591e1.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/24829196/bfe41b00-1c6d-11e7-8bee-1d18a76367ac.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/24829196/bfe41b00-1c6d-11e7-8bee-1d18a76367ac.png)
+
 ## Settings
 The system cleaner has no extra settings as of `v4.4.1`.
