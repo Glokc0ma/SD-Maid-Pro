@@ -64,7 +64,7 @@ Recovery apps:
 The "Pro" version of SD Maid also called the "Unlocker" is a plugin, it's not a standalone application.
 You should install it toegether with the free version of SD Maid and then start the free version. It will detect the plugin and enable all extra features.
 
-Pro features:
+Current upgrades:
 * User defined SystemCleaner filter
 * Deletion function in the AppCleaner tool
 * Deletion function in the Duplicates tool
