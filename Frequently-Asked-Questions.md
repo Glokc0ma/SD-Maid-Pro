@@ -59,6 +59,17 @@ Recovery apps:
 * https://play.google.com/store/apps/details?id=fahrbot.apps.undelete
 * https://play.google.com/store/apps/details?id=com.defianttech.diskdigger
 
+### Hanging "In queue"
+The first time you run any action in a new session, SD Maid will have to make some preparations (check file consistency, check permissions etc). You will see the progress state "In queue" because your task is queued behind the preparations/setup task. In almost all cases where SD Maid seems to hang here it's related to the root check.
+
+At some point SD Maid checks if your device is rooted. This is done by basically just asking for root access and waiting for an answer. Usually there should just be an error or a "no" if the device is not rooted or the root request was declined. If there is no answer at all though then SD Maid waits until a timer runs out, this is what happens when it "hangs". To test if this is the issue you are seeing, long press the settings entry to enter the debug menu, enable the option `Disable root check`, kill and restart SD Maid. If it now works as expected then there is something weird with your system that you might want to look into.
+
+Known causes & solutions:
+* Incomplete root attempt. Reroot your device.
+* Incomplete unroot attempt. Reroot your device, then unroot it correctly.
+* You just updated SD Maid and your super user app did not handle this correctly. Try removing SD Maid from the list apps in the super user app. Reboot your device and let SD Maid request root again. If that doesn't help uninstall SD Maid, remove it from the super user app, reboot your device and reinstall SD Maid. If that doesn't help either, clear the super user apps data and reboot.
+* Sometimes the ROMs are delivered with incomplete root from the manufactor. Either root it or disable the root check in SD Maid.
+
 ## SD Maid Pro
 ### Free vs Pro Version
 The "Pro" version of SD Maid also called the "Unlocker" is a plugin, it's not a standalone application.
