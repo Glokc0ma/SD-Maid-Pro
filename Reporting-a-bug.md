@@ -29,7 +29,7 @@ If SD Maid crashed I should have gotten an automatic crash report (unless you tu
 
 TL;DR
 1. Force stop SD Maid.
-2. Create the file `<sdcard>/Android/data/eu.thedarken.sdm/cache/logfiles/sdm-force-debug-run`
+2. Create the file `<sdcard>/Android/data/eu.thedarken.sdm/files/sdm_force_debug_run`
 3. Open SD Maid and everything will be written into the log file
 4. When you are done just exit SD Maid and mail/upload the log file
 
@@ -38,7 +38,7 @@ The best thing you can provide to help fix an issue is a debug log of the proble
 A debug run is initiated if SD Maids detects the file ```sdm-force-debug-run``` in its public cache folder.
 Example:
 ```
-<sdcard>/Android/data/eu.thedarken.sdm/cache/logfiles/sdm-force-debug-run
+<sdcard>/Android/data/eu.thedarken.sdm/files/sdm_force_debug_run
 ```
 This folder is used as SD Maid can write to it without any extra permissions or requirements, thus we can use the debugrun to troubleshoot permission issues too :wink:.
 
