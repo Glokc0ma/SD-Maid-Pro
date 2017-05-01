@@ -45,6 +45,9 @@ SD Maid doesn't require root, does not root a device and neither indicates a roo
 
 ### Recover deleted files
 If you accidentally deleted some files, you may be able to recover them. Restoring data depends on where the files were originally located and whether the space, that their deletion freed, has been occupied again.
+
+Before attempting any recovery you should check if your files are actually missing. Almost everyone views their media files through gallery apps. What the gallery apps shows can be affected by SD Maid (e.g. deleted thumbnails). Use a file explorer and check if the files you are missing are actually gone. Check folders such as `DCIM` and `Pictures` on your internal and external storage. To fix the gallery app you can use SD Maids Explorer option "Force media scan", try a reboot, attach and detach from a computer or just wait a bit until the system does a media scan on it's own.
+
 #### Removable storage
 Your best chance to restore files that were deleted from a removeable sdcard (e.g. `/storage/sdcard1`) is to plug the sdcard (or the device) into a desktop computer and run software from there.
 
