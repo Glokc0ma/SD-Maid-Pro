@@ -31,7 +31,7 @@ TL;DR
 1. Force stop SD Maid.
 2. Create the file `<sdcard>/Android/data/eu.thedarken.sdm/files/sdm_force_debug_run`
 3. Open SD Maid and everything will be written into the log file
-4. When you are done just exit SD Maid and mail/upload the log file
+4. When you are done just exit SD Maid and mail/upload the log file from `<sdcard>/Android/data/eu.thedarken.sdm/cache/logfiles`
 
 The best thing you can provide to help fix an issue is a debug log of the problem manifesting. A debug log is a very detailed description of everything SD Maid did. Note that the file may private information in form of file names and pathes on your device.
 
@@ -53,10 +53,12 @@ The most comfortable option is having SD Maid create the file for you. This obvi
 * Press the button "Create debug trigger".
 * Done. SD Maids next session will be a debug run :+1:.
 
+The log file can be found here:
+```
+<sdcard>/Android/data/eu.thedarken.sdm/cache/logfiles/
+```
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/16135841/8977d1e0-3426-11e6-8d1c-e9daac0cc980.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/16135841/8977d1e0-3426-11e6-8d1c-e9daac0cc980.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/16135843/8aa8d852-3426-11e6-821a-948771b82ec6.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/16135843/8aa8d852-3426-11e6-821a-948771b82ec6.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/16135846/8cd0f42a-3426-11e6-8411-fb55720bdea7.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/16135846/8cd0f42a-3426-11e6-8411-fb55720bdea7.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/16135847/8e33e2a0-3426-11e6-9f93-ddcc9d4c9b34.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/16135847/8e33e2a0-3426-11e6-9f93-ddcc9d4c9b34.png)
-
-The created logfiles will be on your primary public storage in the same location where the trigger file was created.
