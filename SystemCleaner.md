@@ -109,6 +109,17 @@ The maximum size the target is allowed to be in bytes.
 The minimum size the target has to be in bytes.
 * JSON value `minimumSize`
 
+#### Maximum age
+The maximum age the target can be in miliseconds.
+* A valid match fulfils `NOW - lastModification =< maximumAge`
+* JSON value `minimumAge`
+
+#### Minimum age
+The minimum age the target has to be in miliseconds.
+* A valid match fulfils `NOW - lastModification >= minimumAge`
+* JSON value `minimumAge`
+
+
 #### Regular expression
 A regular expression that will be applied to the whole path and has to match.
 * JSON array `regexes`
@@ -152,6 +163,8 @@ A user filter can be be exported as well as imported. The export format for such
     ],
     "maximumSize": 1000000,
     "minimumSize": 100,
+    "maximumAge": 86400000,
+    "minimumAge": 3600000,
     "regexes": [
         ".+?January.+?.pdf"
     ]
