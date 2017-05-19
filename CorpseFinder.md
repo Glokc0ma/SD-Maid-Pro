@@ -46,6 +46,9 @@ Covers both `/data/dalvik-cache`, `/cache/dalvik-cache` and dalvik cache locatio
 ####  /data/app-private
 Only seen in use on < Android 4.2 contains extra app data. Also black-listing location and also requires root permission to be checked.
 
+#### Apps2SD & Link2SD
+A filter specifically targeting corpses creates through the use of apps like `Apps2SD` or `Link2SD`. For more details see ticket [#674](https://github.com/d4rken/sdmaid-public/issues/674) which discusses the introduction of this feature.
+
 [[[ https://cloud.githubusercontent.com/assets/1439229/14577319/b468b5a2-0372-11e6-9b88-d7b438bb6b59.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14577319/b468b5a2-0372-11e6-9b88-d7b438bb6b59.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14577320/b5b738de-0372-11e6-8bae-51ac54ff3d74.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14577320/b5b738de-0372-11e6-8bae-51ac54ff3d74.png)
 
