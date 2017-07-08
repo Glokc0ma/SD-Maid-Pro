@@ -24,6 +24,11 @@ In the following screenshot, the file `.twrps` is `0.91KB` in size but occupies 
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/24801885/2fe86c6c-1ba6-11e7-871b-0719579fcc4b.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/24801885/2fe86c6c-1ba6-11e7-871b-0719579fcc4b.png)
 
+### Permissions
+Androids basic file system access is based on the linux permission attributes `READ`(r), `WRITE`(w), `EXECUTE`(x) for the permission groups `OWNER`, `GROUP` and `OTHER`. SD Maid displays these permissions in that order, e.g. `rwxrwxrwx` meaning read, write and execute permission for owner, group and other.
+
+This holds true for most of an Android devices storage except for public internal and external storage (depending on device ROMs and Android versions). These locations may be accessed through a "fuse-daemon" which wraps the storage itself and lets the system enforce additional access rules. Due to this an item or location could have the permission `rwxrwxrwx` but still not be accessible (read or writable) for SD Maid and apps. SD Maid's explorer displays this by changing the color of the permission label. An orange color indicates that SD Maid can read, but not write to that location, while a red color indicates that SD Maid can neither read nor write to that location.
+
 ## Operations
 Most operations are item related, that means you have to long press an item to select one (or multiple) such that the context menu becomes visible and then select an operation out of the context menu.
 Note that due to Android constisting of many different storage areas, not all operations success on every time.
