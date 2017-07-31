@@ -31,3 +31,5 @@ Analog to the QuickAccess page, tools started by the widget will use the same se
 ### Troubleshooting
 The widget is deactivated by default and will be enabled by SD Maid when it enables the pro features. Sometimes the widget does not become immediately visible because the launcher does not update its widget list, in these cases, a device reboot (or restarting the launcher) solves the issue.
 
+The widget may also be missing if SD Maid has been "moved to the sdcard", due to an Android limitation.
+
