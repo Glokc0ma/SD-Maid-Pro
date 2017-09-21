@@ -68,12 +68,7 @@ The current setup types (in decreasing priority) are:
 
 If a better setup type is possible, previous setups are undone.
 
-### Busybox status
-The busybox is a collection of default filesystem tools that allow us to copy, delete, search etc. for files.
+### Binary status
+SD Maid requires a set of utilities to carry out its operations to copy, delete and search for files. These utilities come in form of so called "applets" which are usually part of Android itself. To function correctly SD Maid needs to be able to rely on the behavior of these utilities. To ensure this SD Maid conducts tests on applets from various sources on each device. These info boxes show which applets are used. The color indicates how preferrable it is to use each applet. Green is best while red is worst. SD Maid considers an applet source "worse" if SD Maid has to make modifications to be able to run at all. Conditions are checked at every new SD Maid session and if better alternatives are available SD Maid will automatically adapt.
 
-[[[ https://cloud.githubusercontent.com/assets/1439229/14560838/7a258060-0312-11e6-8227-3c8661ad9304.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14560838/7a258060-0312-11e6-8227-3c8661ad9304.png)
-
-## Sqlite status
-The sqlite binary gives SD Maid the option to handle sqlite3 database files.
-
-[[[ https://cloud.githubusercontent.com/assets/1439229/14560838/7a258060-0312-11e6-8227-3c8661ad9304.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14560838/7a258060-0312-11e6-8227-3c8661ad9304.png)
+[[[ https://user-images.githubusercontent.com/1439229/30681327-41875014-9ea5-11e7-9864-7d42c3b32a97.png | height = 300px]]](https://user-images.githubusercontent.com/1439229/30681327-41875014-9ea5-11e7-9864-7d42c3b32a97.png)
