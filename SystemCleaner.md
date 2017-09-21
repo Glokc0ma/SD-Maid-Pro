@@ -18,12 +18,9 @@ A filter for files from crashed applications may be green because these files ar
 ### Empty directories
 You may notice that the empty directories filter still shows items despite already running it previously. The reason behind that is that the SystemCleaner only works based on the information an individual file or directory provides. This means that a directory "A" is not empty if contains a directory "B", even if directory "B" is empty. So in constellations such as A/B/C where A only contains B, and B only contains C, you need to do 3 iterations until A is deleted due to be an empty directory.
 
-[[[ https://cloud.githubusercontent.com/assets/1439229/17000392/99798a46-4ec2-11e6-9ff9-eee0bb04de9f.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000392/99798a46-4ec2-11e6-9ff9-eee0bb04de9f.png)
-[[[ https://cloud.githubusercontent.com/assets/1439229/17000400/a38e41fc-4ec2-11e6-95ca-ca717711a086.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000400/a38e41fc-4ec2-11e6-95ca-ca717711a086.png)
-[[[ https://cloud.githubusercontent.com/assets/1439229/17000401/a3b9a2e8-4ec2-11e6-9648-d92a0ed915ce.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000401/a3b9a2e8-4ec2-11e6-9648-d92a0ed915ce.png)
-[[[ https://cloud.githubusercontent.com/assets/1439229/17000402/a3bbe670-4ec2-11e6-97b1-82b540a58d2b.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000402/a3bbe670-4ec2-11e6-97b1-82b540a58d2b.png)
-[[[ https://cloud.githubusercontent.com/assets/1439229/17000403/a3c4310e-4ec2-11e6-8883-239bea368b55.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000337/596a889c-4ec2-11e6-9f66-e6cbe549bb01.png)
-[[[ https://cloud.githubusercontent.com/assets/1439229/17000404/a3c56402-4ec2-11e6-8f16-96e7100f1d9f.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17000404/a3c56402-4ec2-11e6-8f16-96e7100f1d9f.png)
+[[[ https://user-images.githubusercontent.com/1439229/30683133-779c1df4-9eac-11e7-85a5-a20499de8d03.png | height = 300px]]](https://user-images.githubusercontent.com/1439229/30683133-779c1df4-9eac-11e7-85a5-a20499de8d03.png)
+[[[ https://user-images.githubusercontent.com/1439229/30683135-77c0779e-9eac-11e7-99d7-61ff4e99f8f9.png | height = 300px]]](https://user-images.githubusercontent.com/1439229/30683135-77c0779e-9eac-11e7-99d7-61ff4e99f8f9.png)
+[[[ https://user-images.githubusercontent.com/1439229/30683134-77bfadbe-9eac-11e7-8c1f-596b34992e45.png | height = 300px]]](https://user-images.githubusercontent.com/1439229/30683134-77bfadbe-9eac-11e7-8c1f-596b34992e45.png)
 
 ## UserFilter
 You can create your own filter (i.e. a "UserFilter") to target specific files for which SD Maid does offer a default filter. To create a filter open the filter manager, switch to the "User" tab and use the "+" icon. Try to make the filter as specific as possible and **make sure to check what has been sorted into it after a scan** before you start deleting.
