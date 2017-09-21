@@ -17,25 +17,28 @@ The AppCleaner works on a per App basis, meaning that any file it checks is rela
 
 The filter configuration which can be accessed from the toolbar allows you to further configure which type of "expendable" files SD Maid looks for.
 
-### Default
-This are general filters for categories of expendable files.
+### Generic
+Gerneric filters target files among all apps, e.g. all kinds of advertisement files in apps.
 
 * "Default caches" targets the files in default `<pkg>/cache/` folders on public and private storages.
 * "Hidden caches" targets cache like files that are in non-default cache directories, e.g. `videoCache`, `.cache`.
 * "WebView caches" targets files downloaded by app internal browsers, e.g. if you an app shows you a webpage inside itself.
-
-[[[ https://cloud.githubusercontent.com/assets/1439229/19081902/3629b0b2-8a5c-11e6-9eab-483b94a46f4b.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19081902/3629b0b2-8a5c-11e6-9eab-483b94a46f4b.png)
-
-### Other
-These filteres have specific targets such as certain filetypes or just one specific app.
-
 * "Bug reporting" targets files created by bug/crash reporting tools in apps. Turning this on might make it more difficult for developers to improve their app if it crashes on your device. It can be quite useful though if you don't have internet and an app still creates files that it will never be able to send.
 * "Analytics" similar to "Bug reporting" just targeting analytics related files such as statistics about what you do in an app.
 * "Advertisement" files created or belonging to advertisement functionality, e.g. caches or collected infos.
+
+[[[ https://user-images.githubusercontent.com/1439229/30683752-f344ea10-9eae-11e7-8b82-56ea1478c408.png | height = 300px]]](https://user-images.githubusercontent.com/1439229/30683752-f344ea10-9eae-11e7-8b82-56ea1478c408.png)
+
+### Specific
+These filteres have specific targets such as certain filetypes or just one specific app.
+
 * "WhatsApp sent files" targets files that WhatsApp creates when you send someone a picture of video through WhatsApp.
 * "WhatsApp received files" files received through WhatsApp.
+* "Telegram" targets received and send files by the app Telegram.
+* "Threema" targets files received through the app Threema.
+* "Old WhatsApp backups" targets WhatsApp message backups that are older than 1 day (so you keep the most recent one).
 
-[[[ https://cloud.githubusercontent.com/assets/1439229/19081901/36216e98-8a5c-11e6-89a5-b28ad52d9ae3.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19081901/36216e98-8a5c-11e6-89a5-b28ad52d9ae3.png)
+[[[ https://user-images.githubusercontent.com/1439229/30683753-f345f630-9eae-11e7-95da-f69a41142245.png | height = 300px]]](https://user-images.githubusercontent.com/1439229/30683753-f345f630-9eae-11e7-95da-f69a41142245.png)
 
 ## Settings
 
