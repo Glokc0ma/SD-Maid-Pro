@@ -62,6 +62,16 @@ The uninstall watcher is part of SD Maid Pro. It enables the CorpseFinder to aut
 [[[ https://cloud.githubusercontent.com/assets/1439229/21750087/90427d3c-d5ab-11e6-9c6e-364290426c43.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/21750087/90427d3c-d5ab-11e6-9c6e-364290426c43.png)
 
 ## FAQ
+### Undetected corpses
+The CorpseFinder doesn't detect all file remains. It is impossible to achieve a 100% detection rate with the way file access works on Android. There are several locations such as `/Android/data`, `/data/app`, `/data/data` etc. where SD maid can achieve a near 100% detection rate because apps are expected to follow specific naming patterns in these locations. The big issue is the root of the sdcard where file storage and naming is basically a big free for all. The racing game "Need For Cars 5" could jam 2GB of game files into a folder `Strawberry` and that folder will be left behind after the game is removed.
+
+Because there are no pattern to naming or file structure in these folders it is very difficult to automate detection like we can do for other locations. Detection here relies on a manual database of `PackageName<>Folder` relations and a set of smart "matchers" which try to infer ownership based on names, file structure and content. Millions of apps, which also change with updates, mean though that we are playing a game of catch up. We also have to keep in mind that safety comes before thoroughness, we don't want false positive results that lead to undesired data loss.
+
+So it is expected for some remains to not be detected and it would be nice if you could help improve SD Maid by reporting such cases.
+
+#### Improving detection
+If you found files that the CorpseFinder missed, you can help improve SD Maid by reporting them. First open SD Maids Explorer tool and check whether the files in question show a `?` icon. A `?` means that SD Maid doesn't know what app owns the file. Press the `?` icon and use the screen that will be shown to report it. If the file in question shows the CorpseFinder symbol, then SD Maid does detect it as corpse, but excludes it from deletion for some reason.
+
 ### Reporting false positives
 If you think the CorpseFinder got it wrong and the results contain a false positive, you can long report by long pressing the item or sending me an email. 
 
