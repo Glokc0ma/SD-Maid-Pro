@@ -134,7 +134,3 @@ Adds an "app-like" shortcut to your launcher that directly takes you to the Expl
 There are a few extra file/directory context actions that are not shown by default, you can enable them here.
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/14576144/10608e7c-0367-11e6-8f62-689ce0f3392a.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14576144/10608e7c-0367-11e6-8f62-689ce0f3392a.png)
-
-## Advanced
-If you enter your email in SD Maids settings, the question marks on the right side of unknown entries become interactive, when tapping them a new window will open and extra window in which you can select one of your installed apps as being the owner of that file. Reports are processed manually and I'll update SD Maids definitions are checking the reports.
-SD Maid is and will always be a work in progress, as every day new apps come out :). If you see a folder of which you are sure that it belongs to a specific application, and SD Maid does not recognize it, you can report it. In the settings you can enter your email, after you have done that you can press the "?" in the Explorer and report it from inside the app. 
