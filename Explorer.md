@@ -4,9 +4,6 @@ Most cases of data loss have been the result of people mistaking it for a cleani
 
 The Explorer offers the usual operations such as copying, moving, renaming files etc. In contrast to some other file explorer apps it does not display the device in a "simplified" view, such that it shows a button for "System", "SDCard" and "External SDCard". It shows the file system exactly how it exists on the device.
 
-If you look at a line in the explorer you will see two icons. On the left side there is an icon that displays the file type such as directory or file including a preview if possible (and you have SD Maid Pro). The right side displays the result of SD Maids "ownership research". When browsing a folder, SD Maid will ty to determine who the owner of an item is. A successful research will either result in the owners app icon being displayed or a ghost if the owning app is no longer installed. If the results are inconclusive a "?" will be displayed.
-So if you ever wondered who created those files/folders on your sdcard, the Explorer can help you with that.
-
 You navigate down the directory tree by tapping folders to enter. Going backwards is done by pressing the devices backbutton or tapping directories on the path in the browser bar at the top.
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/14575338/6e409a60-0361-11e6-808b-b0d62bb101a4.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14575338/6e409a60-0361-11e6-808b-b0d62bb101a4.png)
@@ -22,12 +19,47 @@ Usually the allocated size is within a few KB (the blocksize) of the file size. 
 
 In the following screenshot, the file `.twrps` is `0.91KB` in size but occupies `8KB` of filesystem space.
 
-[[[ https://cloud.githubusercontent.com/assets/1439229/24801885/2fe86c6c-1ba6-11e7-871b-0719579fcc4b.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/24801885/2fe86c6c-1ba6-11e7-871b-0719579fcc4b.png)
+[[[ https://user-images.githubusercontent.com/1439229/31046927-d2c81a6e-a601-11e7-98a4-8f2f440cb4d5.png | height = 100px]]](https://user-images.githubusercontent.com/1439229/31046927-d2c81a6e-a601-11e7-98a4-8f2f440cb4d5.png)
 
 ### Permissions
 Androids basic file system access is based on the linux permission attributes `READ`(r), `WRITE`(w), `EXECUTE`(x) for the permission groups `OWNER`, `GROUP` and `OTHER`. SD Maid displays these permissions in that order, e.g. `rwxrwxrwx` meaning read, write and execute permission for owner, group and other.
 
 This holds true for most of an Android devices storage except for public internal and external storage (depending on device ROMs and Android versions). These locations may be accessed through a "fuse-daemon" which wraps the storage itself and lets the system enforce additional access rules. Due to this an item or location could have the permission `rwxrwxrwx` but still not be accessible (read or writable) for SD Maid and apps. SD Maid's explorer displays this by changing the color of the permission label. An orange color indicates that SD Maid can read, but not write to that location, while a red color indicates that SD Maid can neither read nor write to that location.
+
+### Icons
+If you look at a line in the Explorer you will see multiple icons. On the left side there is an icon that displays the file type such as directory or file including a preview if possible (and you have SD Maid Pro).
+
+The right side displays the result of SD Maids "ownership research". When browsing a folder, SD Maid will try to determine who the owner of an item is. A successful research will either result in the owners app icon being displayed or a ghost if the owning app is no longer installed. If the results are inconclusive a `?` will be displayed.
+
+#### Known owner
+[[[ https://user-images.githubusercontent.com/1439229/31046683-31946174-a5fd-11e7-944e-587c1cce3d98.png | height = 100px]]](https://user-images.githubusercontent.com/1439229/31046683-31946174-a5fd-11e7-944e-587c1cce3d98.png)
+
+If an app icon is shown then SD Maid knows who the owner is. Multiple icons may be shown if SD Maid knows multiple owners for this item.
+
+#### Unknown owner
+[[[ https://user-images.githubusercontent.com/1439229/31046684-32e068b6-a5fd-11e7-9daa-12a23fd7f058.png | height = 100px]]](https://user-images.githubusercontent.com/1439229/31046684-32e068b6-a5fd-11e7-9daa-12a23fd7f058.png)
+
+A `?` means that SD Maid doesn't know the owner of this item. If you know the owner, press the questionmark and help improve SD Maid.
+
+#### SystemCleaner target
+[[[ https://user-images.githubusercontent.com/1439229/31046686-340f9874-a5fd-11e7-9c69-4eeb6345ec63.png | height = 100px]]](https://user-images.githubusercontent.com/1439229/31046686-340f9874-a5fd-11e7-9c69-4eeb6345ec63.png)
+
+The SystemCleaner icon is shown for files that match any SystemCleaner filter. Note SD Maid will test all filters, even those that are not enabled. In this example the folder `calimoto` matches the empty directory filter and also has an unknown owner.
+
+#### Corpse
+[[[ https://user-images.githubusercontent.com/1439229/31046680-2f48abfa-a5fd-11e7-80cc-a376501e4091.png | height = 100px]]](https://user-images.githubusercontent.com/1439229/31046680-2f48abfa-a5fd-11e7-80cc-a376501e4091.png)
+
+A normal corpse will be marked by the CorpseFinder's icon in white. Running the CorpseFinder should show this item in the scan results. Note that Explorer checks all CorpseFinder filters, even those that are turned off.
+
+#### Keepers
+[[[ https://user-images.githubusercontent.com/1439229/31046679-2dfc28d0-a5fd-11e7-9908-c71d57f20607.png | height = 100px]]](https://user-images.githubusercontent.com/1439229/31046679-2dfc28d0-a5fd-11e7-9908-c71d57f20607.png)
+
+The orange CorpseFinder icon signifies a corpse that is flagged as "keeper". It is considered a "desirable remanent". This is usually reserved for files such as photos that you may want to keep even without the camera app. To show these corpses among the CorpseFinder results you have to turn on explicitly enable "Show desirable remnants" in the settings.
+
+#### Common
+[[[ https://user-images.githubusercontent.com/1439229/31046910-9675f84c-a601-11e7-954f-cb78dc579713.png | height = 100px]]](https://user-images.githubusercontent.com/1439229/31046910-9675f84c-a601-11e7-954f-cb78dc579713.png)
+
+Items that are flagged as "common" will display a teal CorpseFinder icon. Items are flagged as "common" if they name is too short or too common to make a safe decision regarding ownership. For safety reasons, SD Maid currently does not support automated deletion of these items. In this example the folders name `backups` is used too often my too many apps, it would be very prone to false positive results.
 
 ## Operations
 Most operations are item related, that means you have to long press an item to select one (or multiple) such that the context menu becomes visible and then select an operation out of the context menu.
