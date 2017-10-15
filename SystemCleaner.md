@@ -18,6 +18,9 @@ A filter for files from crashed applications may be green because these files ar
 ### Empty directories
 You may notice that the empty directories filter still shows items despite already running it previously. The reason behind that is that the SystemCleaner only works based on the information an individual file or directory provides. This means that a directory "A" is not empty if contains a directory "B", even if directory "B" is empty. So in constellations such as A/B/C where A only contains B, and B only contains C, you need to do 3 iterations until A is deleted due to be an empty directory.
 
+### '/data/system/dropbox'
+This folder contains crashtracking related files that are created by the system. It has no relation to the cloudstorage app `Dropbox`. [More info.](https://android.stackexchange.com/questions/17282/dropbox-not-installed-but-there-is-log-activity-in-data-system-dropbox)
+
 [[[ https://user-images.githubusercontent.com/1439229/30683133-779c1df4-9eac-11e7-85a5-a20499de8d03.png | height = 300px]]](https://user-images.githubusercontent.com/1439229/30683133-779c1df4-9eac-11e7-85a5-a20499de8d03.png)
 [[[ https://user-images.githubusercontent.com/1439229/30683135-77c0779e-9eac-11e7-99d7-61ff4e99f8f9.png | height = 300px]]](https://user-images.githubusercontent.com/1439229/30683135-77c0779e-9eac-11e7-99d7-61ff4e99f8f9.png)
 [[[ https://user-images.githubusercontent.com/1439229/30683134-77bfadbe-9eac-11e7-8c1f-596b34992e45.png | height = 300px]]](https://user-images.githubusercontent.com/1439229/30683134-77bfadbe-9eac-11e7-8c1f-596b34992e45.png)
