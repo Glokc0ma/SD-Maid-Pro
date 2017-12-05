@@ -90,3 +90,7 @@ Example:
 * `com.android.systemui` is a non-locked default exclusion. If the app is running (which the system UI always is) SD Maid has to kill it before working on it. While not critical, killing the system UI can lead to soft-reboot which can lead other apps to malfunction. As the system UI doesn't offer much to do for SD Maid anyways, a default exclusion was added for it.
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/17080612/14331caa-5136-11e6-884b-daada890c539.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/17080612/14331caa-5136-11e6-884b-daada890c539.png)
+
+## FAQ
+### Exclusions & AppCleaner on unrooted devices
+See [AppCleaner without Root `freestoryAndNotify`](https://github.com/d4rken/sdmaid-public/wiki/AppCleaner#some-appcleaner-exclusions-dont-work-without-root).
