@@ -1,4 +1,26 @@
 # FAQ
+* [General](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#general)
+  * [I just want to clean my device, what to do?](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#i-just-want-to-clean-my-device-what-to-do)
+  * [Why should I use SD Maid?](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#why-should-i-use-sd-maid)
+  * [Does SD Maid only work on sdcards?](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#does-sd-maid-only-work-on-sdcards)
+  * [Recover deleted files](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#recover-deleted-files)
+  * [Hanging](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#hanging-in-queue)
+  * [External storage and Android 4.4](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#external-storage-and-android-44)
+  * [SD Maid v2/v3/v4](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#sd-maid-v2v3v4)
+  * [Screen overlay detected](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#screen-overlay-detected)
+* [SD Maid Pro]()
+  * [Free vs Pro Version](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#free-vs-pro-version)
+  * [Why are there two SD Maid apps?](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#why-are-there-two-sd-maid-apps)
+  * [Factory-Reset / Device-Change](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#factory-reset--device-change)
+  * [Google Play is not showing the purchase](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#google-play-is-not-showing-the-purchase)
+  * [Google Play is asking me to buy the app again](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#google-play-is-asking-me-to-buy-the-app-again)
+  * [SD Maid is not enabling the pro features](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#sd-maid-is-not-enabling-the-pro-features)
+  * [I can't find SD Maid Pro on my device](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#i-cant-find-sd-maid-pro-on-my-device)
+* [Root](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#root)
+  * [What is root?](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#what-is-root)
+  * [Does SD Maid only work with root?](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#does-sd-maid-only-work-with-root)
+  * [MobileIron](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#mobileiron)
+
 ## General
 ### I just want to clean my device, what to do?
 * Install SD Maid, if you own [SD Maid Pro](https://play.google.com/store/apps/details?id=eu.thedarken.sdm.unlocker), then also install the Unlocker now.
@@ -8,50 +30,13 @@
 * After completing the setup, SD Maid will run the "scan" part of each tool.
 * When the scan finishes you can press "execute" to delete/optimize, or press a specific tool to view more details.
 
-### Screen overlay detected
-The warning "Screen overlay detected" is a popup dialog you may see when trying to grant app permissions on an Android 6.0+ device. This is a security feature (from Android, not SD Maid) which prevents you from granting any permissions while an app is active that can draw on the screen, because malicious apps could alter the text of the permission dialog. The warning is not SD Maid specific and it's not SD Maid using the a screen overlay, but another application on your device.
-
-Solution:
-* Open settings
-* Disable the overlay permissions for all listed apps
-* Grant SD Maid (or any other app) it's permission
-* Enable the overlay permissions again
-
-[[[ https://cloud.githubusercontent.com/assets/1439229/19970701/1d9a9e9c-a1dd-11e6-8ed5-06fb81443707.jpg | height = 150px]]](https://cloud.githubusercontent.com/assets/1439229/19970701/1d9a9e9c-a1dd-11e6-8ed5-06fb81443707.jpg)
-
-### External storage and Android 4.4
-Write access to external (removable) storage is not possible on Android 4.4. Files can only be read, not modified. This means that non-system apps can neither delete, edit or create files on the external storage outside of a few specific directories, e.g. music apps can't edit `. mp3` and SD Maid can't delete files.
-
-There are only 4 solutions:
-* Upgrade the device to Android 5.0 or later.
-* Downgrade the device to Android 4.3 or earlier.
-* Root the device and modify the ROM to exhibit pre Android 4.4 behavior (for apps that can't use root permission).
-* Root the device and allow the app to use root permission.
-
-External (removable) sdcards were never officially supported by Android up until Android 4.4+. Prior to Android 4.4 device manufactors applied workarounds where they mounted the external storage to an arbitrary location and grouped it toegether with the normal workaround by mounting the removable sdcard somewhere on the device and changing the ROM to grant access to both internal and external public storage when the permission [WRITE_EXTERNAL_STORAGE](https://developer.android.com/reference/android/Manifest.permission.html#WRITE_EXTERNAL_STORAGE) is granted to apps. Android 4.4 officially introduced a way to get the path of the external sdcard and an additional permission for it named `WRITE_MEDIA_STORAGE`, but this permission is only available to system apps. For unknown reasons (possibly pressure from Google), manufactors also stopped applying their workaround in Android 4.4, leaving apps without a way to gain write access to external sdcards on Android 4.4. Android 5.0 expanded the [Storage Access Framework (SAF)](https://developer.android.com/guide/topics/providers/document-provider.html), which made it possible (although complicated) to gain write access to external storage again. Users stuck on Android 4.4 seem to have been forgotten by both Google and device manufactors.
-
-### Does SD Maid only work on sdcards?
-**No.** SD Maid will consider any accessible storage in your device. Depending on what can be accessed, this includes internal storage, external storage and usb storage.
-
 ### Why should I use SD Maid?
-
 **Because it's thorough and honest.**
 If you want a broom, you look for the one that cleans best, any other purchase argument is secondary. SD Maid v0.1 was released on [29.03.2011](http://forum.xda-developers.com/showpost.php?p=12482608&postcount=1). Years of learning and more experience, constant improvements and adaption to every new Android kink, make SD Maid what is is today.
 SD Maid is brutally honest, there will be no euphemisms to make your feel better after "cleaning" your device. No hidden agenda to pressure you into using the app itself. A tool to use when needed.
 
-### SD Maid v2/v3/v4
-There are different versions available of SD Maid. Every few years SD Maid was completely overhauled to improve it through gained experience and to adopt to new Android environments. During these overhauls the minimum required Android version is usually raised due reduce workload, maintaining compatibility "hacks" for very old Android versions is usually not feasible when supporting the newest Android versions.
-
-It's possibly that newer versions seem slower but downgrading because of that is bad trade, you would gain speed but pay with thoroughness and safety. Searching through more and doing additional checks just costs time. Never versions may show less items to delete, not because they are worse, but because for specific reasons it is no longer considered good to remove these files. The goal is not to delete the most files, but the right files. Every change has a good reason.
-
-In short: **Use the latest version of SD Maid available for your device.**
-
-* SD Maid v2 was the main app version from 2012Q2 to 2013Q1. Its target is Android 2.1 to 2.2.
-* SD Maid v3 was the main app version from 2013Q1 to 2016Q1. Its target is Android 2.3 to 4.0.
-* SD Maid v4 is the main app version since 2016Q1. Its target version is Android 4.1+.
-
-### MobileIron
-SD Maid doesn't require root, does not root a device and neither indicates a rooted device. Until MobileIron 9.3, SD Maid was blacklisted by packagename which could cause enterprise devices using the MobileIron system to be flagged as "out of compliance" while SD Maid was installed. If you previously had issues with this, update your MobileIron client to `9.3` or later and the issue should be fixed.
+### Does SD Maid only work on sdcards?
+**No.** SD Maid will consider any accessible storage in your device. Depending on what can be accessed, this includes internal storage, external storage and usb storage.
 
 ### Recover deleted files
 If you accidentally deleted some files, you may be able to recover them. Restoring data depends on where the files were originally located and whether the space, that their deletion freed, has been occupied again.
@@ -77,11 +62,44 @@ The first time you run any action in a new session, SD Maid will have to make so
 
 At some point SD Maid checks if your device is rooted. This is done by basically just asking for root access and waiting for an answer. Usually there should just be an error or a "no" if the device is not rooted or the root request was declined. If there is no answer at all though then SD Maid waits until a timer runs out, this is what happens when it "hangs". To test if this is the issue you are seeing, long press the settings entry to enter the debug menu, enable the option `Disable root check`, kill and restart SD Maid. If it now works as expected then there is something weird with your system that you might want to look into.
 
+### External storage and Android 4.4
+Write access to external (removable) storage is not possible on Android 4.4. Files can only be read, not modified. This means that non-system apps can neither delete, edit or create files on the external storage outside of a few specific directories, e.g. music apps can't edit `. mp3` and SD Maid can't delete files.
+
+There are only 4 solutions:
+* Upgrade the device to Android 5.0 or later.
+* Downgrade the device to Android 4.3 or earlier.
+* Root the device and modify the ROM to exhibit pre Android 4.4 behavior (for apps that can't use root permission).
+* Root the device and allow the app to use root permission.
+
+External (removable) sdcards were never officially supported by Android up until Android 4.4+. Prior to Android 4.4 device manufactors applied workarounds where they mounted the external storage to an arbitrary location and grouped it toegether with the normal workaround by mounting the removable sdcard somewhere on the device and changing the ROM to grant access to both internal and external public storage when the permission [WRITE_EXTERNAL_STORAGE](https://developer.android.com/reference/android/Manifest.permission.html#WRITE_EXTERNAL_STORAGE) is granted to apps. Android 4.4 officially introduced a way to get the path of the external sdcard and an additional permission for it named `WRITE_MEDIA_STORAGE`, but this permission is only available to system apps. For unknown reasons (possibly pressure from Google), manufactors also stopped applying their workaround in Android 4.4, leaving apps without a way to gain write access to external sdcards on Android 4.4. Android 5.0 expanded the [Storage Access Framework (SAF)](https://developer.android.com/guide/topics/providers/document-provider.html), which made it possible (although complicated) to gain write access to external storage again. Users stuck on Android 4.4 seem to have been forgotten by both Google and device manufactors.
+
 Known causes & solutions:
 * Incomplete root attempt. Reroot your device.
 * Incomplete unroot attempt. Reroot your device, then unroot it correctly.
 * You just updated SD Maid and your super user app did not handle this correctly. Try removing SD Maid from the list apps in the super user app. Reboot your device and let SD Maid request root again. If that doesn't help uninstall SD Maid, remove it from the super user app, reboot your device and reinstall SD Maid. If that doesn't help either, clear the super user apps data and reboot.
 * Sometimes the ROMs are delivered with incomplete root from the manufactor. Either root it or disable the root check in SD Maid.
+
+### SD Maid v2/v3/v4
+There are different versions available of SD Maid. Every few years SD Maid was completely overhauled to improve it through gained experience and to adopt to new Android environments. During these overhauls the minimum required Android version is usually raised due reduce workload, maintaining compatibility "hacks" for very old Android versions is usually not feasible when supporting the newest Android versions.
+
+It's possibly that newer versions seem slower but downgrading because of that is bad trade, you would gain speed but pay with thoroughness and safety. Searching through more and doing additional checks just costs time. Never versions may show less items to delete, not because they are worse, but because for specific reasons it is no longer considered good to remove these files. The goal is not to delete the most files, but the right files. Every change has a good reason.
+
+In short: **Use the latest version of SD Maid available for your device.**
+
+* SD Maid v2 was the main app version from 2012Q2 to 2013Q1. Its target is Android 2.1 to 2.2.
+* SD Maid v3 was the main app version from 2013Q1 to 2016Q1. Its target is Android 2.3 to 4.0.
+* SD Maid v4 is the main app version since 2016Q1. Its target version is Android 4.1+.
+
+### Screen overlay detected
+The warning "Screen overlay detected" is a popup dialog you may see when trying to grant app permissions on an Android 6.0+ device. This is a security feature (from Android, not SD Maid) which prevents you from granting any permissions while an app is active that can draw on the screen, because malicious apps could alter the text of the permission dialog. The warning is not SD Maid specific and it's not SD Maid using the a screen overlay, but another application on your device.
+
+Solution:
+* Open settings
+* Disable the overlay permissions for all listed apps
+* Grant SD Maid (or any other app) it's permission
+* Enable the overlay permissions again
+
+[[[ https://cloud.githubusercontent.com/assets/1439229/19970701/1d9a9e9c-a1dd-11e6-8ed5-06fb81443707.jpg | height = 150px]]](https://cloud.githubusercontent.com/assets/1439229/19970701/1d9a9e9c-a1dd-11e6-8ed5-06fb81443707.jpg)
 
 ## SD Maid Pro
 ### Free vs Pro Version
@@ -151,3 +169,6 @@ Imagine you buy an offroad vehicle, like a Jeep or a LandRover Defender.
 Do you have to drive offroad? No, but if you want to, then you can.
 It still works perfectly well being driven on a normal road. 
 ```
+
+### MobileIron
+SD Maid doesn't require root, does not root a device and neither indicates a rooted device. Until MobileIron 9.3, SD Maid was blacklisted by packagename which could cause enterprise devices using the MobileIron system to be flagged as "out of compliance" while SD Maid was installed. If you previously had issues with this, update your MobileIron client to `9.3` or later and the issue should be fixed.
