@@ -4,7 +4,7 @@
   * [Why should I use SD Maid?](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#why-should-i-use-sd-maid)
   * [Does SD Maid only work on sdcards?](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#does-sd-maid-only-work-on-sdcards)
   * [Recover deleted files](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#recover-deleted-files)
-  * [Hanging](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#hanging-in-queue)
+  * [Hanging](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#hanging)
   * [External storage and Android 4.4](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#external-storage-and-android-44)
   * [SD Maid v2/v3/v4](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#sd-maid-v2v3v4)
   * [Screen overlay detected](https://github.com/d4rken/sdmaid-public/wiki/Frequently-Asked-Questions#screen-overlay-detected)
@@ -57,10 +57,18 @@ Recovery apps:
 * https://play.google.com/store/apps/details?id=fahrbot.apps.undelete
 * https://play.google.com/store/apps/details?id=com.defianttech.diskdigger
 
-### Hanging "In queue"
+### Hanging
+#### "In queue"
 The first time you run any action in a new session, SD Maid will have to make some preparations (check file consistency, check permissions etc). You will see the progress state "In queue" because your task is queued behind the preparations/setup task. In almost all cases where SD Maid seems to hang here it's related to the root check.
 
-At some point SD Maid checks if your device is rooted. This is done by basically just asking for root access and waiting for an answer. Usually there should just be an error or a "no" if the device is not rooted or the root request was declined. If there is no answer at all though then SD Maid waits until a timer runs out, this is what happens when it "hangs". To test if this is the issue you are seeing, long press the settings entry to enter the debug menu, enable the option `Disable root check`, kill and restart SD Maid. If it now works as expected then there is something weird with your system that you might want to look into.
+At some point SD Maid checks if your device is rooted. This is done by basically just asking for root access and waiting for an answer. Usually there should just be an error or a "no" if the device is not rooted or the root request was declined. If there is no answer at all though then SD Maid waits until a timer runs out, this is what happens when it "hangs".
+
+To test if this is the issue you are seeing, long press the settings entry to enter the debug menu, enable the option `Disable root check`, kill and restart SD Maid. If it now works as expected then there is an issue with your root setup. In many cases this is just a small glitch with the superuser management app. Remove SD Maid from superuser app, reboot your device and try again.
+
+#### During execution
+Sometimes it may look like SD Maid is hanging during a task. Make sure to wait at least 15 minutes before assuming there is an issue (and contacting me 😁 ). If you have many files, huge duplicate files or large databases it is possible for SD Maid to take up to half an hour to complete operations. You can put your phone away while waiting.
+
+A common cause for huge slowdowns, i.e. SD Maid seeming "stuck", are faulty sdcards. If the sdcard is damaged and/or the filesystem is corrupted the I/O performance drops drastically. To confirm this, remove the sdcard and try again. If your sdcard is faulty I would strongly advise to backup all your data from it. In some cases formating "seems" to fix the sdcard again but I would recommand to not risk it and just replace it.
 
 ### External storage and Android 4.4
 Write access to external (removable) storage is not possible on Android 4.4. Files can only be read, not modified. This means that non-system apps can neither delete, edit or create files on the external storage outside of a few specific directories, e.g. music apps can't edit `. mp3` and SD Maid can't delete files.
