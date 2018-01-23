@@ -15,7 +15,18 @@ Secondary storage setup is a step that is only available on Android 5.0+. It's p
 Since Android 4.4 most devices no longer allow apps to write to the secondary storage (e.g. external/removable sdcards) and accessing sdcards through the SAF only works since 5.0. So sadly Android 4.4 users are out of luck.
 Anyways, if you reach this step, SD Maid will display a list of storage locations she would like to be granted access to.
 
-### Steps
+[[[ https://cloud.githubusercontent.com/assets/1439229/14230453/787daed6-f958-11e5-9718-be013e87e86e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230453/787daed6-f958-11e5-9718-be013e87e86e.png)
+[[[ https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png)
+
+### Android 7.0+
+On Android Nougat and newer, clicking on an orange storage entry should bring up a dialog where you just have to press `Grant` to allow SD Maid access.
+
+[[[ https://user-images.githubusercontent.com/1439229/35281759-0cd7b56e-0054-11e8-8f1d-7183b3eb8801.png | height = 300px]]](https://user-images.githubusercontent.com/1439229/35281759-0cd7b56e-0054-11e8-8f1d-7183b3eb8801.png)
+
+### Android 6.0 and older
+If you do not have Android 7.0 then the permission setup is a little bit more complicated because you have to manually select the path for which you want to grant SD Maid access.
+
+#### Steps
 * Tap an orange entry, remember the location it displays, e.g. `/storage/sdcard1`
 * In the new window open the drawer on the left and select the related storage entry
 * If there is no entry for your sdcard, close the drawer again, tap the overflow menu button in the top right corner and select `Show sdcards`, then repeat the previous step.
@@ -23,11 +34,9 @@ Anyways, if you reach this step, SD Maid will display a list of storage location
 * At the top right or bottom right corner, press the select button.
 You should now have returned to SD Maid and the previously orange entry is green. Rinse and repeat for every entry.
 
-[[[ https://cloud.githubusercontent.com/assets/1439229/14230453/787daed6-f958-11e5-9718-be013e87e86e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230453/787daed6-f958-11e5-9718-be013e87e86e.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14230454/7a0150d2-f958-11e5-9c1d-08de69ffad7b.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230454/7a0150d2-f958-11e5-9c1d-08de69ffad7b.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14230455/7b4b0fe6-f958-11e5-9b1a-2bbb5a7d972e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230455/7b4b0fe6-f958-11e5-9b1a-2bbb5a7d972e.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/14230457/7f1a8e62-f958-11e5-8713-951b4500f49e.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230457/7f1a8e62-f958-11e5-8713-951b4500f49e.png)
-[[[ https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png)
 
 ### Issues
 #### Documents window is empty (shows no sdcards)
