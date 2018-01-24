@@ -19,7 +19,7 @@ Anyways, if you reach this step, SD Maid will display a list of storage location
 [[[ https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/14230458/7f3ff5b2-f958-11e5-9472-beec5c35c369.png)
 
 ### Android 7.0+
-On Android Nougat and newer, clicking on an orange storage entry should bring up a dialog where you just have to press `Grant` to allow SD Maid access.
+On Android Nougat and newer, clicking on an orange storage entry should bring up a dialog where you just have to press **Allow** to allow SD Maid access.
 
 [[[ https://user-images.githubusercontent.com/1439229/35281759-0cd7b56e-0054-11e8-8f1d-7183b3eb8801.png | height = 300px]]](https://user-images.githubusercontent.com/1439229/35281759-0cd7b56e-0054-11e8-8f1d-7183b3eb8801.png)
 
