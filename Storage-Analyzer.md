@@ -14,6 +14,10 @@ The following locations are supported:
 [[[ https://cloud.githubusercontent.com/assets/1439229/22393604/0c4f35ec-e50a-11e6-9066-a5fcfd472d37.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/22393604/0c4f35ec-e50a-11e6-9066-a5fcfd472d37.png)
 [[[ https://cloud.githubusercontent.com/assets/1439229/22393605/0c793b30-e50a-11e6-91d4-90aac06c2154.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/22393605/0c793b30-e50a-11e6-91d4-90aac06c2154.png)
 
+## File sizes
+The storage analyzer displays `allocated size` instead of `file size`. For more details on this, see [here](https://github.com/d4rken/sdmaid-public/wiki/Explorer#file-size).
+
+
 ## Settings
 ### Show inaccessible items
 Some storage items such as `/data` and `/cache` can only be scanned with root permission, but their total size may still be determined without root (e.g. using `df`). To show them enable this setting.
