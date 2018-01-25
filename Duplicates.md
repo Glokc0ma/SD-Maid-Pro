@@ -9,24 +9,37 @@ The underlying routines use size and checksums (MD5) to determine which files ar
 [[[ https://cloud.githubusercontent.com/assets/1439229/19916189/0f9363a4-a0b8-11e6-9ad7-770602854e80.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19916189/0f9363a4-a0b8-11e6-9ad7-770602854e80.png)
 
 ## Autoselection
-Now a lot of people ask which duplicates to delete and there is no right or wrong answer to this question. At least none that an app could make, it's all up to preference. 
+A lot of people ask which duplicates to delete and which to keep and there is no right or wrong answer to this question. At least none that an app could make, it's all up to preference. 
 
-Example
+Example:
 > Lets say you have two music albums called "Best running tracks of 2013" and "My favorite motorcycle music" and both obviously contain the track "Darken - Singing in the shower.mp3". You have the same file in two different locations. Now which one should be deleted, or none at all? I can't answer that and neither can SD Maid, only you can.
 > In any case the DuplicateFinder will make sure you always have one copy left.
 
-SD Maid offers a few ways of automatically selecting items:
-* Keep the file with the newest modification date
-* Keep the file with the oldest modification date
-* Keep the most nested item (the item that is most nested, e.g. `/nested/more_nested/most_nested`)
-* Keep the top level item (shortest path, e.g. `/sdcard/top_level`)
-* Keep a random item
-* Keep on primary storage (the remaining file should be on your devices internal sdcard)
-* Keep on secondary storage (the remaining file should be on your external removable sdcard)
+SD Maid determines which duplicates to keep through a list of _Criteria_ (a list of tests/ a set of preferences). Each files in a set of duplicates will be compared and ordered based on these criteria, the most preferred file is kept while other duplicates are be deleted.
 
-The procedure set as default will be used when the Duplicates tool is used through the [Scheduler](https://github.com/d4rken/sdmaid-public/wiki/Scheduler), [QuickAccess](https://github.com/d4rken/sdmaid-public/wiki/QuickAccess) or Widget.
+The criteria are configured in a list of descending priority. You can drag and rearrange this list. The criterion at the top is the most important one. If two files are equal in regards to the top criterion, then they are compared based on the second criterion.
 
-[[[ https://cloud.githubusercontent.com/assets/1439229/19916186/0f90605a-a0b8-11e6-82c9-6944858a89e2.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19916186/0f90605a-a0b8-11e6-82c9-6944858a89e2.png)
+### Criteria
+The configured preferences will also be used when the Duplicates tool is used through the [Scheduler](https://github.com/d4rken/sdmaid-public/wiki/Scheduler), [QuickAccess](https://github.com/d4rken/sdmaid-public/wiki/QuickAccess) or Widget.
+
+Currently these criteria are supported:
+
+#### Media Provider
+The media provider is an app that holds a database of most media files (including their metadata) on your device. Other apps such as galleries use this information to know which files to display. My default it suggests to keep _indexed files_ and to delete not _not indexed files_. Meaning we keep the duplicate files we can actually see in an gallery app while we delete other duplicate version of that file that are likely not directly visible to us.
+
+#### Storage Location
+The storage location refers to the physical storage device the files reside on. You can choose between _primary storage_, which is usually the built-in storage and _secondary storage_ which usually refers to removable sdcards. By default this criterion prefers files on secondary storage by assuming that it is more likely the user wants to free space on internal storage.
+
+#### Path nesting
+Path nesting refers to the amount of subdirectories a file is in. The default setting prefers _shallowly nested files_ as those are more accessible to the user. When you look at your storage you are more likely to look in `/sdcard/Pictures` than in `/sdcard/Android/data/some.app/pictures`.
+
+#### Modification date
+Even if two files have different modification dates, they can still have the same content. This criterion prefers older files by default as the newer file is likely an unwanted copy.
+
+Example: You take a picture with your camera and at a later point in time you send that picture to someone with another app. That other app creates a copy of the picture in its own folder. It's likely that you want to keep the file at it's original location (in your camera folder) as this is where you expect it.
+
+
+[[[ https://user-images.githubusercontent.com/1439229/35372927-9f160414-019c-11e8-839c-c72d1b04392f.png | height = 300px]]](https://user-images.githubusercontent.com/1439229/35372927-9f160414-019c-11e8-839c-c72d1b04392f.png)
 
 ## Settings
 ### Search locations
