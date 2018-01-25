@@ -21,6 +21,7 @@ In the following screenshot, the file `.twrps` is `0.91KB` in size but occupies 
 
 [[[ https://user-images.githubusercontent.com/1439229/31046927-d2c81a6e-a601-11e7-98a4-8f2f440cb4d5.png | height = 100px]]](https://user-images.githubusercontent.com/1439229/31046927-d2c81a6e-a601-11e7-98a4-8f2f440cb4d5.png)
 
+#### Known issues
 If you are certain that the size is incorrect and you have undstood the difference between `file size` and `allocated size`, then your ROM may be affected by a kernel bug, see [here](https://github.com/d4rken/sdmaid-public/issues/830).
 
 ### Permissions
