@@ -41,13 +41,19 @@ These filteres have specific targets such as certain filetypes or just one speci
 [[[ https://user-images.githubusercontent.com/1439229/30683753-f345f630-9eae-11e7-95da-f69a41142245.png | height = 300px]]](https://user-images.githubusercontent.com/1439229/30683753-f345f630-9eae-11e7-95da-f69a41142245.png)
 
 ## Settings
-
-* Include System-Apps: Whether system apps should be included in the results.
-* Sort mode: How the results should be sorted.
-* Minimum cache age: SD Maid can filter out files that are below a minimum cache age (in days). Note that SD Maid can not enforce this for all files on unrooted devices. See FAQ on why some exclusions don't work.
-* Skip running apps: Skip currently running apps. If running apps are not skipped they are killed before deleting their cache. Apps will be killed 'softly', i.e. using [killBackgroundProcesses](https://developer.android.com/reference/android/app/ActivityManager.html#killBackgroundProcesses(java.lang.String)), even if root is available. For a running app the event will be similar to being killed in low memory situations. Killed background services may restart at will.
-* Show inaccessible items: Some items, especially on 6.0+ without root may be known to SD Maid, but can't be accessed (i.e. deleted).
-* `freeStorageAndNotify` is a trick that can be used on some ROMs (< Android 6.0) to clear private caches without root. It basically triggers the `System>Storage>Clear Cache` action. This can be turned off because using it also clears the default public caches. If you have cache files in public caches that you don't want deleted, e.g. have exclusions for, you have to disable this function such that SD Maids exclusions can take effect (because using this function outsources some work to the system which doesn't know about SD Maids exclusions).
+### Include System-Apps
+Whether system apps should be included in the results.
+### Sort mode
+How the results should be sorted.
+### Minimum cache age
+SD Maid can filter out files that are below a minimum cache age (in days), e.g. keep files newer than `x` days. Generally speaking, cache is not a bad thing, so this setting allows for a compromise between performance and storage space. The default setting of `0` means that no age filter is applied and the maximum amount of files are suggested for deletion.
+Note that SD Maid can not enforce this for all files on unrooted devices. See FAQ regarding exclusions and `freeStorageAndNotify`.
+### Skip running apps
+Skip currently running apps. If running apps are not skipped they are killed before deleting their cache. Apps will be killed 'softly', i.e. using [killBackgroundProcesses](https://developer.android.com/reference/android/app/ActivityManager.html#killBackgroundProcesses(java.lang.String)), even if root is available. For a running app the event will be similar to being killed in low memory situations. Killed background services may restart at will.
+### Show inaccessible items
+Some items, especially on 6.0+ without root may be known to SD Maid, but can't be accessed (i.e. deleted).
+###`freeStorageAndNotify`
+`freeStorageAndNotify` is a trick that can be used on some ROMs (< Android 6.0) to clear private caches without root. It basically triggers the `System>Storage>Clear Cache` action. This can be turned off because using it also clears the default public caches. If you have cache files in public caches that you don't want deleted, e.g. have exclusions for, you have to disable this function such that SD Maids exclusions can take effect (because using this function outsources some work to the system which doesn't know about SD Maids exclusions).
 
 [[[ https://cloud.githubusercontent.com/assets/1439229/19081897/360e14b0-8a5c-11e6-81a5-0bf10d6acd01.png | height = 300px]]](https://cloud.githubusercontent.com/assets/1439229/19081897/360e14b0-8a5c-11e6-81a5-0bf10d6acd01.png)
 
