@@ -65,6 +65,12 @@ At some point SD Maid checks if your device is rooted. This is done by basically
 
 To test if this is the issue you are seeing, long press the settings entry to enter the debug menu, enable the option `Disable root check`, kill and restart SD Maid. If it now works as expected then there is an issue with your root setup. In many cases this is just a small glitch with the superuser management app. Remove SD Maid from superuser app, reboot your device and try again.
 
+Known causes & solutions:
+* Incomplete root attempt. Reroot your device.
+* Incomplete unroot attempt. Reroot your device, then unroot it correctly.
+* You just updated SD Maid and your super user app did not handle this correctly. Try removing SD Maid from the list apps in the super user app. Reboot your device and let SD Maid request root again. If that doesn't help uninstall SD Maid, remove it from the super user app, reboot your device and reinstall SD Maid. If that doesn't help either, clear the super user apps data and reboot.
+* Sometimes the ROMs are delivered with incomplete root from the manufactor. Either root it or disable the root check in SD Maid.
+
 #### During execution
 Sometimes it may look like SD Maid is hanging during a task. Make sure to wait at least 15 minutes before assuming there is an issue (and contacting me 😁 ). If you have many files, huge duplicate files or large databases it is possible for SD Maid to take up to half an hour to complete operations. You can put your phone away while waiting.
 
@@ -81,11 +87,7 @@ There are only 4 solutions:
 
 External (removable) sdcards were never officially supported by Android up until Android 4.4+. Prior to Android 4.4 device manufactors applied workarounds where they mounted the external storage to an arbitrary location and grouped it toegether with the normal workaround by mounting the removable sdcard somewhere on the device and changing the ROM to grant access to both internal and external public storage when the permission [WRITE_EXTERNAL_STORAGE](https://developer.android.com/reference/android/Manifest.permission.html#WRITE_EXTERNAL_STORAGE) is granted to apps. Android 4.4 officially introduced a way to get the path of the external sdcard and an additional permission for it named `WRITE_MEDIA_STORAGE`, but this permission is only available to system apps. For unknown reasons (possibly pressure from Google), manufactors also stopped applying their workaround in Android 4.4, leaving apps without a way to gain write access to external sdcards on Android 4.4. Android 5.0 expanded the [Storage Access Framework (SAF)](https://developer.android.com/guide/topics/providers/document-provider.html), which made it possible (although complicated) to gain write access to external storage again. Users stuck on Android 4.4 seem to have been forgotten by both Google and device manufactors.
 
-Known causes & solutions:
-* Incomplete root attempt. Reroot your device.
-* Incomplete unroot attempt. Reroot your device, then unroot it correctly.
-* You just updated SD Maid and your super user app did not handle this correctly. Try removing SD Maid from the list apps in the super user app. Reboot your device and let SD Maid request root again. If that doesn't help uninstall SD Maid, remove it from the super user app, reboot your device and reinstall SD Maid. If that doesn't help either, clear the super user apps data and reboot.
-* Sometimes the ROMs are delivered with incomplete root from the manufactor. Either root it or disable the root check in SD Maid.
+☹️ 
 
 ### SD Maid v2/v3/v4
 There are different versions available of SD Maid. Every few years SD Maid was completely overhauled to improve it through gained experience and to adopt to new Android environments. During these overhauls the minimum required Android version is usually raised due reduce workload, maintaining compatibility "hacks" for very old Android versions is usually not feasible when supporting the newest Android versions.
